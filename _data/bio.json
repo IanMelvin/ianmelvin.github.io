@@ -26,12 +26,12 @@
       "keywords": [ "C", "C++", "C#" ]
     },
     {
-      "name": "Toolsets",
-      "keywords": [ "Unreal Engine 5", "Unity", "Git/GitHub" ]
+      "name": "Development Tools / Project Management Ideology",
+      "keywords": [ "Unreal Engine 5", "Unity", "Git/GitHub", "Agile & Scrum"]
     }
     {
-      "name": "Other",
-      "keywords": [ "3D Mathematics", "Vector Calculus", "Agile & Scrum", "Collaboration", "Communication" ]
+      "name": "Math / Soft Skills",
+      "keywords": [ "3D Mathematics", "Vector Calculus", "Collaboration", "Communication" ]
     }
   ],
   "education": [
