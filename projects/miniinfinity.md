@@ -9,7 +9,7 @@ labels:
   - Unity
   - C#
   - GitHub
-summary: "A text adventure game that I developed for ICS 313."
+summary: "A 3rd person wave based shooter developed by a team of 9."
 ---
 
 <img class="img-fluid" src="../img/cotton/cotton-header.png">
