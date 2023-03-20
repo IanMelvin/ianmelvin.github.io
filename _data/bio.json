@@ -58,24 +58,25 @@
       "company": "SEGS @ UVM",
       "position": "Unity Programmer",
       "website": "https://www.uvm.edu/~segs",
-      "startDate": "2023-30-01",
+      "startDate": "2023-01-30",
       "endDate": "Present",
-      "summary": "Developer on Flood Simulation Project",
+      "summary": "Developing a Flood Simulator game in Unity for the Cooperative Institute for Research to Operations in Hydrology",
       "highlights": [
-        "Maintain, update, and oversee official college newspaper website",
-        "Drive, design and build student-community projects for UH Manoa"
+        "Working in Unity, C# and Blender",
+        "The goal is to study the impact of government warnings, the local news, and community interactions on people’s decision making",
+        "Collaborating in weekly meetings to develop a strong gameplay system and make sure it aligns with the data we want to collect"
       ]
     },
     {
-      "company": "UH Information Technology Services",
-      "position": "Help Desk Consultant",
+      "company": "Weathered Sweater",
+      "position": "QA Tester",
       "website": "http://www.hawaii.edu/its/",
-      "startDate": "2015-01-01",
-      "endDate": "2016-03-15",
+      "startDate": "2020-10-01",
+      "endDate": "2022-01-01",
       "summary": "",
       "highlights": [
-        "Troubleshoot software, hardware and networking issues over the phone",
-        "Answer phone and email responses to the ITS Help Desk"
+        "Tested published games such as: Pupperazi, Skater Gator, and Dot’s Home",
+        "Provided reports of any bugs and how to trigger them, as well as difficulty to complete tasks and other quality related questions"
       ]
     }
   ],
