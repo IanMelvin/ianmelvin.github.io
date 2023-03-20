@@ -22,12 +22,16 @@
   ],
   "skills": [
     {
-      "name": "Languages and Frameworks",
-      "keywords": [ "C", "C++", "Java", "Javascript", "Assembly", "Common Lisp" ]
+      "name": "Languages",
+      "keywords": [ "C", "C++", "C#" ]
     },
     {
-      "name": "Toolsets/OS",
-      "keywords": [ "MacOS", "Ubuntu", "Git/GitHub", "g++", "TI LaunchPad" ]
+      "name": "Toolsets",
+      "keywords": [ "Unreal Engine 5", "Unity", "Git/GitHub" ]
+    }
+    {
+      "name": "Other",
+      "keywords": [ "3D Mathematics", "Vector Calculus", "Agile & Scrum", "Collaboration", "Communication" ]
     }
   ],
   "education": [
