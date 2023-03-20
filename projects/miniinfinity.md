@@ -2,11 +2,12 @@
 layout: project
 type: project
 image: img/cotton/cotton-square.png
-title: "Cotton"
-date: 2014
+title: "Mini Infinity"
+date: 2022
 published: true
 labels:
-  - Lisp
+  - Unity
+  - C#
   - GitHub
 summary: "A text adventure game that I developed for ICS 313."
 ---
