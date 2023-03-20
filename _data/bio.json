@@ -26,12 +26,20 @@
       "keywords": [ "C", "C++", "C#" ]
     },
     {
-      "name": "Development Tools / Project Management Ideology",
-      "keywords": [ "Unreal Engine 5", "Unity", "Git/GitHub", "Agile & Scrum"]
+      "name": "Development Tools",
+      "keywords": [ "Unreal Engine 5", "Unity", "Git/GitHub"]
     },
     {
-      "name": "Math / Soft Skills",
-      "keywords": [ "3D Mathematics", "Vector Calculus", "Collaboration", "Communication" ]
+      "name": "Project Management Ideology",
+      "keywords": [ "Agile & Scrum"]
+    },
+    {
+      "name": "Math",
+      "keywords": [ "3D Mathematics", "Vector Calculus" ]
+    },
+    {
+      "name": "Soft Skills",
+      "keywords": [ "Collaboration", "Communication" ]
     }
   ],
   "education": [
