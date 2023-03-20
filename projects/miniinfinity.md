@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/cotton/cotton-square.png
+image: img/miniinfinity/miLogo.png
 title: "Mini Infinity"
 date: 2022
 published: true
