@@ -1,26 +1,26 @@
 {
   "basics": {
-    "name": "Molly Maluhia",
-    "label": "Student",
-    "picture": "https://github.com/kambergjohnson.png",
-    "email": "molly@hawaii.edu",
-    "phone": "808-333-4444",
-    "website": "https://mmaluhia.github.io",
-    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2024.",
-    "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
+    "name": "Ian Melvin",
+    "label": "Game Programmer",
+    "picture": "https://github.com/ianmelvin.png",
+    "email": "ian.r.melvin@gmail.com",
+    "phone": "315-439-9741",
+    "website": "https://ianmelvin.github.io",
+    "summary": "I am studying for a B.S. in Game Programming with a minor in Mathematics at the Champlain College. I expect to graduate in Spring, 2023.",
+    "location": { "address": "", "postalCode": "13035", "city": "Cazenovia", "countryCode": "USA", "region": "New York" },
     "profiles": [
-      { "network": "github", "username": "mmaluhia", "url": "http://github.com/changeme" },
-      { "network": "linkedin", "username": "mollymaluhia", "url": "http://linkedin.com/in/changeme" },
+      { "network": "github", "username": "IanMelvin", "url": "http://github.com/IanMelvin" },
+      { "network": "linkedin", "username": "Ian Melvin", "url": "https://www.linkedin.com/in/ianrmelvin/" },
       { "network": "twitter", "username": "mollymal", "url": "http://twitter.com/changeme" },
       { "network": "instagram", "username": "molly", "url": "http://instagram.com/changeme" }
     ]
   },
   "interests": [
-    { "name": "Interactive media" },
-    { "name": "Neuromorphic Computing" },
-    { "name": "Quantum Computing" },
-    { "name": "Robotics" },
-    { "name": "3D Graphics" }
+    { "name": "Game Programmming" },
+    { "name": "UI" },
+    { "name": "Comic Books" },
+    { "name": "Lego" },
+    { "name": "Cooking" }
   ],
   "skills": [
     {
