@@ -11,8 +11,8 @@
     "profiles": [
       { "network": "github", "username": "IanMelvin", "url": "http://github.com/IanMelvin" },
       { "network": "linkedin", "username": "Ian Melvin", "url": "https://www.linkedin.com/in/ianrmelvin/" },
-      { "network": "twitter", "username": "mollymal", "url": "http://twitter.com/changeme" },
-      { "network": "instagram", "username": "molly", "url": "http://instagram.com/changeme" }
+      //{ "network": "twitter", "username": "mollymal", "url": "http://twitter.com/changeme" },
+      //{ "network": "instagram", "username": "molly", "url": "http://instagram.com/changeme" }
     ]
   },
   "interests": [
