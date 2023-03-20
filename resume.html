@@ -41,9 +41,7 @@ layout: home
         <h1 class="display-6 text-start m-0">Resume</h1>
       </div>
       <div class="col">
-          {% capture url %}{{ site.data.bio.basics.website }}{% endcapture %}
-          {% capture label %}{{ site.data.bio.basics.website | remove: "http://" | remove: "https://" }}{% endcapture %}
-          <p class="mb-1">{% url=url label=label %} </p>
+           <p class="mb-0"><a href="{{ site.data.bio.basics.website }}">{{ entry.website | remove: "http://" | remove: "https://" }}</a></p>
       </div>
     </div>
 
