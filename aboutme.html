@@ -14,25 +14,10 @@ layout: home
 
     <div class="row">
       <div class="col">
-        {% capture url %}{{ site.data.bio.basics.website }}{% endcapture %}
-        {% capture label %}{{ site.data.bio.basics.website | remove: "http://" | remove: "https://" }}{% endcapture %}
-        <p class="mb-1">{% include about/social.html url=url name='house' label=label %} </p>
-
-        {% capture url %}mailto:{{ site.data.bio.basics.email }}{% endcapture %}
-        {% capture label %}{{ site.data.bio.basics.email }}{% endcapture %}
-        <p class="mb-1">{% include about/social.html url=url name='envelope' label=label %}</p>
-
-        {% for profile in site.data.bio.basics.profiles %}
-          {% capture url %}{{ profile.url }}{% endcapture %}
-          {% capture name %}{{ profile.network | downcase }}{% endcapture %}
-          {% capture label %}{{ profile.username }}{% endcapture %}
-          <p class="mb-1">{% include about/social.html url=url name=name label=label %}</p>
-        {% endfor %}
+        <p class="mb-1"> I'm currently a student at Champlain College, majoring in Game Programming and minoring in Mathematics, with an expected graduation in May 2023. I've been coding since my sophomore year of high school and have had a passion for it ever since. I've found quite a lot of enjoyment from video game development and I hope to continue to create fun experiences for people around the world. </p>
       </div>
       <div class="col">
-        <p class="mb-1 text-end">{{ site.data.bio.basics.location.address }}</p>
-        <p class="mb-1 text-end">{{ site.data.bio.basics.location.city }}, {{ site.data.bio.basics.location.region }} {{ site.data.bio.basics.location.postalCode }} {{ site.data.bio.basics.location.countryCode }}</p>
-        <p class="mb-1 text-end">{{ site.data.bio.basics.phone }}</p>
+        <p class="mb-1">Outside of coding I'm an casual hiker and enjoy a good swim on a hot day or just any day I can get to a lake or pool. I love to read comic books and enjoy building Lego sets. Tabletop RPGs like Dungeons and Dragons and Starfinder are one of the ways I like to spend my evenings, especially when I get to do it while sitting around a table with friends.</p>
       </div>
     </div>
     
