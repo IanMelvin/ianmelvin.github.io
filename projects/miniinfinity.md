@@ -9,52 +9,45 @@ labels:
   - Unity
   - C#
   - GitHub
+  - itch.io
 summary: "A 3rd person wave based shooter developed by a team of 9."
 ---
 
 <img class="img-fluid" src="../img/cotton/cotton-header.png">
 
-Mini Infinity is a wierd game is a horror-style text-based adventure game I developed using the functions and macros built from The Wizard's Game in [Conrad Barski's Land of Lisp](http://landoflisp.com/). Slightly more interesting and convoluted! (It is not that scary.)
+This game was created during a production class in my spring semester, during my third year, at Champlain College. In this 3D wave based shooter, the player controls Mini, a young star mage hoping to pass the trials their professor has set for them by defeating the waves of Crystalline enemies. As the main programmer for our game my implemented many of our games systems and mechanics including, Player and Enemy characters, item, UI, and animation implementation.
 
 To give you a flavor of the game, here is an excerpt from one run:
 
 <hr>
 
 <pre>
-You open your eyes, and you are greeted by an unfamiliar ceiling.
-Startled, you get to your feet and quickly scan your surroundings. It's
-dark except for the stream of light coming from a crack on the only boarded
-window in the room. You try to peek through the crack, but you cannot see
-anything. You wonder where you are and who could have possibly brought you here.
+Character:
 
-<--------------------help------------------------>
-Enter quit or one of the following commands -
-Weld light look walk pickup inventory help h ?
-<------------------------------------------------>
+The player needed to be able to move around the map and effectively combat the approaching enemies meanwhile the enemies needed to be able to move towards and attack the player. To handle all of this I created a player movement and actions system and multiple enemy AI's to allow for the necessary interaction between the two groups.
 
-look
-The room is a picture of decay with only a faded number identifying it as room-4. The bed you were
- lying on is stained with what looks like dried blood. Could it be your blood? No - it is not. The
- only way out of the room aside from the door to the corridor is a window that is boarded shut. It
- looks like it has been like that for decades. There is a door going west from here. You see a candle
- on the floor. You see a match on the floor.
+For the enemy AI I utilized Unity's Nav Mesh to determine the moveable terrain. And each enemy type had its own behavior system which helped to determine how it should act depending on what is happening in the world around it. Pictured bellow is a piece of Ranged Enemy AI:
 
-pickup candle
-- you are now carrying the candle -
+Item:
+One of the system we included in our game was referred to as the Relic system. Relics are items that can spawn throughout the game and help the player if they are being overwhelmed by the number of enemies around them. In the game we only have one type of Relic, the Leo or Fire Relic (Pictured bellow). The Leo Relic when put on the ground would blast out a cone of fire destroying any enemies which came in its path.
 
-pickup match
-- you are now carrying the match -
 
-light match candle
+In order to get the Relic fit for the game, I needed to set a framework to allow for the Relic to have 2 different materials (depending on if it's active or not), the flame VFX and the behind the scenes code that made it all come together and work seamlessly. This was handled in a way which allowed for an easy conversion to an item base class if we able to add more Relics. Pictured bellow is the Relic:
 
-The candle is now lit. It illuminates everything in the room.
+UI:
 
-walk west
-The corridor is lit with the candle. It is so long that you cannot see to the end. You notice that
- there are words written on the wall. There is a door going east from here. There is a way going north
- from here. There is a door going south from here.
+I created a full settings menu to give the player the ability to customize the experience they are having while playing the game, with options to adjust volume, rebind their controls, and change camera sensitivity. In while in play there are multiple panels which convey to the player information about their run: Health, score, wave number and number of active enemies.
+
+For the control binding, I decided to create my own system to manage and store the player preferences and update any scripts which rely on player input. Like with the rest of the settings menu values, when the game is closed the player settings are saved and reloaded when the player next interacts with the settings menu.
+
+Animation Implementation:
+
+For this project we had a variety of animation to go with both our main character and our enemies. For each animated model, I needed to create an animation controller and appropriately link them up to the actions the player and enemies were taking to provide accurate visual feedback
+
+
+Both the player and enemies had animation controllers, each controller established how the animations could and would transition between each other. In different movement and attack script for the characters, variables were set which changed what animations were active depending on what the player was doing. Pictured bellow is the player animation controller:
 </pre>
 
 <hr>
 
-Source: <a href="https://github.com/jogarces/ics-313-text-game"><i class="large github icon "></i>jogarces/ics-313-text-game</a>
+Source: <a href="https://home-fries-and-associates.itch.io/mini-infinity">Mini Infinity itch.io page</a>
