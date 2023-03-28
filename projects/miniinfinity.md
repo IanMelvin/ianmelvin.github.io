@@ -17,8 +17,6 @@ summary: "A 3rd person wave based shooter developed by a team of 9."
 
 This game was created during a production class in my spring semester, during my third year, at Champlain College. In this 3D wave based shooter, the player controls Mini, a young star mage hoping to pass the trials their professor has set for them by defeating the waves of Crystalline enemies. As the main programmer for our game my implemented many of our games systems and mechanics including, Player and Enemy characters, item, UI, and animation implementation.
 
-To give you a flavor of the game, here is an excerpt from one run:
-
 <hr>
 
 <pre>
