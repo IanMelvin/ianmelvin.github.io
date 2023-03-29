@@ -14,7 +14,9 @@ labels:
 summary: "Dead Pedal is a 3rd person, action, open world driving game set in a fictional version of the Mojave desert."
 ---
 
-<img class="img-fluid" src="../img/cotton/cotton-header.png">
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hmdd7PEL4Rg" allowfullscreen></iframe>
+</div>
 
 Dead Pedal is a 3rd person, action, open world driving game set in a fictional version of the Mojave desert, where your goal is to cause as much chaos and destruction as possible. Go out and explore the world's threats to get revenge for your fallen goldfish, Ted.
 
