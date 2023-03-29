@@ -10,10 +10,12 @@ labels:
   - C#
   - Git
   - itch.io
-summary: "A 3rd person wave based shooter developed by a team of 9."
+summary: "Mini Infinity is a 3rd person wave based shooter about a star-mage in training."
 ---
 
 <img class="img-fluid" src="../img/miniinfinity/MiniInfinity.png">
+
+In Mini Infinity, players take the role of Mini, a star-mage in training, tasked with defending themselves against many hordes of crystalline enemies. Players must enchant enemies and other objects around the arena to throw. Occasionally, powerful relics will appear that will allow Mini to change the tide of battle. Different events may also occur, such as lava pits, that will constantly keep the player on their toes.
 
 This game was created during a production class in my spring semester, during my third year, at Champlain College. In this 3D wave based shooter, the player controls Mini, a young star mage hoping to pass the trials their professor has set for them by defeating the waves of Crystalline enemies. As the main programmer for our game my implemented many of our games systems and mechanics including, Player and Enemy characters, item, UI, and animation implementation.
 
