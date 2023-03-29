@@ -8,7 +8,7 @@ published: true
 labels:
   - Unity
   - C#
-  - GitHub
+  - Git
   - itch.io
 summary: "A 3rd person wave based shooter developed by a team of 9."
 ---
