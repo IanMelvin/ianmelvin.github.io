@@ -14,7 +14,7 @@ labels:
 summary: "Dead Pedal is a 3rd person, action, open world driving game set in a fictional version of the Mojave desert."
 ---
 
-<div class="ratio ratio-16x9">
+<div class="ratio ratio-21x9">
   <iframe src="https://www.youtube.com/embed/hmdd7PEL4Rg" title="Dead Pedal Trailer" allowfullscreen></iframe>
 </div>
 
