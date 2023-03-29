@@ -8,7 +8,9 @@ published: true
 labels:
   - Unreal 5
   - C++
-  - GitHub
+  - Git
+  - Steam
+  - itch.io
 summary: "A 3rd person driving game."
 ---
 
