@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: 
+image: img/deadpedal/deadpedal_logo.png
 title: "Dead Pedal"
 date: 2022/2023
 published: true
