@@ -21,7 +21,7 @@ In Mini Infinity, players take the role of Mini, a star-mage in training, tasked
 
 This game was created during a production class in my spring semester, during my third year, at Champlain College. In this 3D wave based shooter, the player controls Mini, a young star mage hoping to pass the trials their professor has set for them by defeating the waves of Crystalline enemies. As the main programmer for our game my implemented many of our games systems and mechanics including, Player and Enemy characters, Item, UI, and Animation implementation.
 
- <h3 class="display-4">Character:</h3>
+ <h5 class="display-4">Character:</h5>
  
 The player needed to be able to move around the map and effectively combat the
 approaching enemies meanwhile the enemies needed to be able to move towards and
@@ -38,7 +38,7 @@ And each enemy type had its own behavior system which helped to determine how
 it should act depending on what is happening in the world around it. Pictured
 bellow is a piece of Ranged Enemy AI:
 
- <h3 class="display-4">Item:</h3>
+ <h5 class="display-4">Item:</h5>
  
 One of the system we included in our game was referred to as the Relic system. 
 Relics are items that can spawn throughout the game and help the player if they 
@@ -57,7 +57,7 @@ the flame VFX and the behind the scenes code that made it all come together and
 work seamlessly. This was handled in a way which allowed for an easy conversion
 to an item base class if we able to add more Relics. Pictured bellow is the Relic:
 
- <h3 class="display-4">UI:</h3>
+ <h5 class="display-4">UI:</h5>
 
 I created a full settings menu to give the player the ability to customize the
 experience they are having while playing the game, with options to adjust volume,
@@ -75,7 +75,7 @@ with the rest of the settings menu values, when the game is closed the player
 settings are saved and reloaded when the player next interacts with the settings 
 menu.
 
- <h3 class="display-4">Animation Implementation:</h3>
+ <h5 class="display-4">Animation Implementation:</h5>
 
 For this project we had a variety of animation to go with both our main character
 and our enemies. For each animated model, I needed to create an animation controller
