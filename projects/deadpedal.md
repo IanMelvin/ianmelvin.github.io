@@ -19,32 +19,6 @@ summary: "Dead Pedal is a 3rd person, action, open world driving game set in a f
 </div>
 
 <p class="pt-3 pb-1">Dead Pedal is a 3rd person, action, open world driving game set in a fictional version of the Mojave desert, where your goal is to cause as much chaos and destruction as possible. Go out and explore the world's threats to get revenge for your fallen goldfish, Ted. 
-
-Team:
-
-  Ian Melvin (Myself) - UI / Systems Programmer
-  
-  Michael Bowen - Physics and DevOps Programmer
-  
-  Eli Moore - AI Programmer
-  
-  Aiden Wright - Systems Designer
-  
-  Jeremy Edwards - Mission Designer
-  
-  Nathan Preston - Level Designer
-  
-  Riley Davis - Narrative Designer
-  
-  Gregory Desiato - Environment Artist
-  
-  Isabella King - Character Artist
-  
-  Brie Haller - Environment Artist
-  
-  Jason Ryan - Prop / Environment Artist
-  
-  Thomas Charlton - Producer
   
 <div class="ratio ratio-21x9">
   <iframe src="https://www.youtube.com/embed/meNLQpxT9xs" title="Garage Video" allowfullscreen></iframe>
