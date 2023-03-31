@@ -13,7 +13,7 @@ labels:
 summary: "Mini Infinity is a 3rd person wave based shooter about a star-mage in training."
 ---
 
-<img class="img-fluid max-height:10px; width: auto;" src="../img/miniinfinity/MiniInfinity.png">
+<img class="img-fluid" src="../img/miniinfinity/MiniInfinity.png" width="300px">
 
 In Mini Infinity, players take the role of Mini, a star-mage in training, tasked with defending themselves against many hordes of crystalline enemies. Players must enchant enemies and other objects around the arena to throw. Occasionally, powerful relics will appear that will allow Mini to change the tide of battle. Different events may also occur, such as lava pits, that will constantly keep the player on their toes.
 
@@ -27,7 +27,7 @@ attack the player. To handle all of this I created a player movement and actions
 system and multiple enemy AI's to allow for the necessary interaction between the 
 two groups.
 
-<img class="img-fluid" src="../img/miniinfinity/miCharacer_Enemy.png">
+<img class="img-fluid" src="../img/miniinfinity/miCharacer_Enemy.png" width="300px">
 
 For the enemy AI I utilized Unity's Nav Mesh to determine the moveable terrain.
 And each enemy type had its own behavior system which helped to determine how
