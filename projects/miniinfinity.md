@@ -13,7 +13,9 @@ labels:
 summary: "Mini Infinity is a 3rd person wave based shooter about a star-mage in training."
 ---
 
-<img class="mx-auto d-block" src="../img/miniinfinity/MiniInfinity.png" width="800px">
+ <div class="text-center">
+   <img class="img-fluid" src="../img/miniinfinity/MiniInfinity.png" width="800px">
+ </div>
 
 In Mini Infinity, players take the role of Mini, a star-mage in training, tasked with defending themselves against many hordes of crystalline enemies. Players must enchant enemies and other objects around the arena to throw. Occasionally, powerful relics will appear that will allow Mini to change the tide of battle. Different events may also occur, such as lava pits, that will constantly keep the player on their toes.
 
@@ -27,7 +29,9 @@ attack the player. To handle all of this I created a player movement and actions
 system and multiple enemy AI's to allow for the necessary interaction between the 
 two groups.
 
-<img class="mx-auto d-block" src="../img/miniinfinity/miCharacer_Enemy.png" width="800px">
+ <div class="text-center">
+   <img class="img-fluid" src="../img/miniinfinity/miCharacer_Enemy.png" width="800px">
+ </div>
 
 For the enemy AI I utilized Unity's Nav Mesh to determine the moveable terrain.
 And each enemy type had its own behavior system which helped to determine how
@@ -43,7 +47,9 @@ have one type of Relic, the Leo or Fire Relic (Pictured bellow). The Leo Relic
 when put on the ground would blast out a cone of fire destroying any enemies 
 which came in its path.
 
-<img class="mx-auto d-block" src="../img/miniinfinity/miRelic.png" width="800px">
+ <div class="text-center">
+   <img class="img-fluid" src="../img/miniinfinity/miRelic.png" width="800px">
+ </div>
 
 In order to get the Relic fit for the game, I needed to set a framework to allow 
 for the Relic to have 2 different materials (depending on if it's active or not),
@@ -59,7 +65,9 @@ rebind their controls, and change camera sensitivity. In while in play there are
 multiple panels which convey to the player information about their run: Health,
 score, wave number and number of active enemies.
 
-<img class="mx-auto d-block" src="../img/miniinfinity/miSettings_menu.png" width="800px">
+ <div class="text-center">
+   <img class="img-fluid" src="../img/miniinfinity/miSettings_menu.png" width="800px">
+ </div>
   
 For the control binding, I decided to create my own system to manage and store
 the player preferences and update any scripts which rely on player input. Like
@@ -74,7 +82,9 @@ and our enemies. For each animated model, I needed to create an animation contro
 and appropriately link them up to the actions the player and enemies were taking to
 provide accurate visual feedback
 
-<img class="mx-auto d-block" src="../img/miniinfinity/miAnimation_Tree.png" width="800px">
+ <div class="text-center">
+   <img class="img-fluid" src="../img/miniinfinity/miAnimation_Tree.png" width="800px">
+ </div>
   
 Both the player and enemies had animation controllers, each controller established
 how the animations could and would transition between each other. In different movement
@@ -82,9 +92,6 @@ and attack script for the characters, variables were set which changed what anim
 were active depending on what the player was doing. Pictured bellow is the player 
 animation controller:
 
-<hr>
-<pre>
-</pre>
-<hr>
+<hr class="my-4">
 
 itch.io Page: <a href="https://home-fries-and-associates.itch.io/mini-infinity">Mini Infinity itch.io page</a>
