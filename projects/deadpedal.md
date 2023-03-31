@@ -35,7 +35,7 @@ Brie Haller - Environment Artist
 Jason Ryan - Prop / Environment Artist
 Thomas Charlton - Producer
   
-<div class="ratio ratio-4x3">
+<div class="ratio ratio-21x9">
   <iframe src="https://www.youtube.com/embed/meNLQpxT9xs" title="Garage Video" allowfullscreen></iframe>
 </div>
 
