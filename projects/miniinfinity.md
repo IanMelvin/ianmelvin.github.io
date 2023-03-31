@@ -19,9 +19,6 @@ In Mini Infinity, players take the role of Mini, a star-mage in training, tasked
 
 This game was created during a production class in my spring semester, during my third year, at Champlain College. In this 3D wave based shooter, the player controls Mini, a young star mage hoping to pass the trials their professor has set for them by defeating the waves of Crystalline enemies. As the main programmer for our game my implemented many of our games systems and mechanics including, Player and Enemy characters, item, UI, and animation implementation.
 
-<hr>
-
-<pre>
 Character:
 
 The player needed to be able to move around the map and effectively combat the
@@ -76,8 +73,10 @@ how the animations could and would transition between each other. In different m
 and attack script for the characters, variables were set which changed what animations
 were active depending on what the player was doing. Pictured bellow is the player 
 animation controller:
-</pre>
 
 <hr>
+<pre>
+</pre>
+<hr>
 
-Source: <a href="https://home-fries-and-associates.itch.io/mini-infinity">Mini Infinity itch.io page</a>
+itch.io Page: <a href="https://home-fries-and-associates.itch.io/mini-infinity">Mini Infinity itch.io page</a>
