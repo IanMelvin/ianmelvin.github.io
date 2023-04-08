@@ -45,7 +45,7 @@ The settings menu was designed with the intent to provide the player with a vari
 I made a smaller UI widget which allowed the player to push arrow keys to change the settings values, doing this allowed for more options to be displayed and make it easier to keep track of which setting the player is interacting with. In the push for optimization I projected one of Unreals functions, a benchmark test, to the front in the form of a button. When pressed, the benchmark button checks the computer and updates all of the users settings to reflect the results of the test. 
  
  <div class="text-center">
-   <img class="img-fluid" src="../img/deadpedal/dpSettingsMenu.jpg" width="800px">
+   <img class="img-fluid" src="../img/deadpedal/dpSettingsMenu.png" width="800px">
  </div>
 
 <h2>Technical Information:</h2> 
