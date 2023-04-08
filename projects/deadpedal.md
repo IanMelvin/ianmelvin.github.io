@@ -3,7 +3,7 @@ layout: project
 type: project
 image: img/deadpedal/deadpedal_logo.png
 title: "Dead Pedal"
-date: 2022/2023
+date: August 2022 - May 2023
 published: true
 labels:
   - Unreal 5
