@@ -3,7 +3,7 @@ layout: project
 type: project
 image: img/miniinfinity/miniInfinity_logo_BG.png
 title: "Mini Infinity"
-date: 2022
+date: January 2022 - May 2022
 published: true
 labels:
   - Unity
