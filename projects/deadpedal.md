@@ -5,6 +5,7 @@ image: img/deadpedal/deadpedal_logo.png
 title: "Dead Pedal"
 date: August 2022 - May 2023
 published: true
+teamSize: 23
 labels:
   - Unreal 5
   - C++
