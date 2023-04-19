@@ -1,10 +1,10 @@
 ---
 title: About Me
-layout: home
+layout: home_variant
 ---
 
-<div style="background-color: var(--tf-page-bg-color)" class="bg-gradient py-3">
-  <div class="container">
+<div style="background-color: var(--tf-page-bg-color)" class="bg-gradient">
+  <div class="container py-3">
 
     <div class="row">
       <div class="col">
@@ -21,5 +21,15 @@ layout: home
         <img class="rounded-circle pb-5" src={{ site.data.bio.basics.picture }}>
       </div>
     </div>
+    
+    <footer class="fixed-bottom navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+      <div class="container-fluid">
+        <div class="ms-auto">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+          </ul>
+        </div>
+     </div>
+    </footer>
     
 </div>
