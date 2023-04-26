@@ -16,15 +16,7 @@ layout: home_variant
       <div class="col">
         <p class="mb-1 pt-4 pb-4"> I am studying for a B.S. in Game Programming with a minor in Mathematics at the Champlain College. I expect to graduate in Spring, 2023. I've been coding since my sophomore year of high school and have had a passion for it ever since. I've found quite a lot of enjoyment from video game development and I hope to continue to create fun experiences for people around the world. </p>
         <p class="mb-1 pt-4">Outside of coding I'm an casual hiker and enjoy a good swim on a hot day or just any day I can get to a lake or pool. I love to read comic books and enjoy building Lego sets. Tabletop RPGs like Dungeons and Dragons and Starfinder are one of the ways I like to spend my evenings, especially when I get to do it while sitting around a table with friends.</p>
-      </div>
-      <div class="col">
-        <img class="rounded-circle pb-5" src={{ site.data.bio.basics.picture }}>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="col">
-        <h3 class="text-left pt-2 pb-2">Contact Me!</h3>
+        <h3 class="text-left pt-5 pb-2">Contact Me!</h3>
         
         {% capture url %}{{ site.data.bio.basics.website }}{% endcapture %}
         {% capture label %}{{ site.data.bio.basics.website | remove: "http://" | remove: "https://" }}{% endcapture %}
@@ -47,6 +39,9 @@ layout: home_variant
             {{ site.data.bio.basics.phone }}
           </a>
         </p>
+      </div>
+      <div class="col">
+        <img class="rounded-circle pb-5" src={{ site.data.bio.basics.picture }}>
       </div>
     </div>
     
