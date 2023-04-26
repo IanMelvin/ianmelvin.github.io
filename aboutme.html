@@ -24,6 +24,8 @@ layout: home_variant
     
     <div class="row">
       <div class="col">
+        <h3 class="display-4 text-left pt-2 pb-2">Contact Me!</h3>
+        
         {% capture url %}{{ site.data.bio.basics.website }}{% endcapture %}
         {% capture label %}{{ site.data.bio.basics.website | remove: "http://" | remove: "https://" }}{% endcapture %}
         <p class="mb-1">{% include about/social.html url=url name='house' label=label %} </p>
