@@ -8,6 +8,7 @@ published: true
 teamSize: 23
 labels:
   - Unreal 5
+  - UMG UI
   - C++
   - Git
   - Steam
