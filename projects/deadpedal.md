@@ -25,13 +25,13 @@ summary: "Dead Pedal is a 3rd person, action, open world driving game set in a f
     smartlook('init', '2fb05b8dec724caa0120461df1b0cf9bdc7826d4', { region: 'eu' });
 </script>
 
-<div class="ratio ratio-21x9">
+<div class="ratio ratio-21x9 pb-3">
   <iframe src="https://www.youtube.com/embed/hmdd7PEL4Rg" title="Dead Pedal Trailer" allowfullscreen width="800px"></iframe>
 </div>
 
 <p class="pt-3 pb-1">Dead Pedal is a 3rd person, action, open world driving game set in a fictional version of the Mojave desert, where your goal is to cause as much chaos and destruction as possible. Go out and explore the world's threats to get revenge for your fallen goldfish, Ted. 
   
-<div class="ratio ratio-21x9">
+<div class="ratio ratio-21x9 pb-3">
   <iframe src="https://www.youtube.com/embed/meNLQpxT9xs" title="Garage Video" allowfullscreen width="800px"></iframe>
 </div>
 
@@ -39,7 +39,7 @@ summary: "Dead Pedal is a 3rd person, action, open world driving game set in a f
 
 When the garage is first loaded in it generates menu tabs and item buttons based on data tables. The menu creates new item buttons as needed when switching tabs, and make any buttons that aren't needed by a tab unseen and not intractable by the player until the player goes to a tab that needs them. Each data table (Pictured below) contains the values which correspond to each button including: item name, item ID, static mesh, material instance, locked status, etc. The data tables are designed to be easily modified by other members of the team, so the system is not dependent on me for adding new customization options. 
 
- <div class="text-center">
+ <div class="text-center pb-3">
    <img class="img-fluid" src="../img/deadpedal/dpDataTable.PNG" width="800px">
  </div>
 
@@ -49,13 +49,13 @@ When a user clicks an item button, system passes the corresponding car part to a
  
 The settings menu was designed with the intent to provide the player with a variety of options to help improve their experience. It started out with an interest in trying to provide ways to optimize graphical performance as well as allow the player to rebind controls. The design became oriented primarily around buttons and trying to provide each sub option as a simple click. While this was easy to set up, it took up a lot of space on the screen.
 
-  <div class="text-center">
+  <div class="text-center pb-3">
    <img class="img-fluid" src="../img/deadpedal/dpSettingsMenu_old.PNG" width="800px">
  </div>
  
 I made a smaller UI widget which allowed the player to push arrow keys to change the settings values, doing this allowed for more options to be displayed and make it easier to keep track of which setting the player is interacting with. In the push for optimization I projected one of Unreals functions, a benchmark test, to the front in the form of a button. When pressed, the benchmark button checks the computer and updates all of the users settings to reflect the results of the test. 
  
- <div class="text-center">
+ <div class="text-center pb-3">
    <img class="img-fluid" src="../img/deadpedal/dpSettingsMenu.png" width="800px">
  </div>
 
