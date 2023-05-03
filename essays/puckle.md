@@ -49,7 +49,4 @@ While this all seems pretty straightforward, its development wasn’t. At first,
 
 The next biggest issue I encountered was the performance impact of running A* for 4 ghosts, this had been something I was advised to not have run each frame. I ended up setting a coroutine which would let around 5 seconds pass before the next search could be run, was this overkill… I won’t lie, 5 seconds was overkill. The issue that would come from the 5 second delay was that the AI could easily get tricked into thinking it doesn’t need to move anymore since it’s reached its goal before the path is updated. 
 
-The last major issue I encountered was that issue I teased back at the beginning with the walls. The player could sometimes get themselves slighted inside the wall, while on screen it doesn’t look like anything is wrong, the AI gets confused because the player ends up registering as being in a weird in-between location that it can’t calculate a path to. While I never implemented this fix, my intended solution was to replace movement and object placement with a grid of specifically defined tiles, instead of it being general Unity coordinates. 
-
-## In Conclusion
-
+The last major issue I encountered was that issue I teased back at the beginning with the walls. The player could sometimes get themselves slighted inside the wall, while on screen it doesn’t look like anything is wrong, the AI gets confused because the player ends up registering as being in a weird in-between location that it can’t calculate a path to. While I never implemented this fix, my intended solution was to replace movement and maze generation with a grid of specifically defined tiles, instead of it being general Unity coordinates that were approximated to tile like dimensions. 
