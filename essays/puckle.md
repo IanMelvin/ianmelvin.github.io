@@ -14,7 +14,7 @@ labels:
 In the fall semester of 2022, I recreated the classic arcade game, Pac-Man, in Unity 2D. This project had 2 main caveats, I needed to create the AI using A* pathfinding and the maze needed to have parts of it generated randomly every time the game was run. This post will go over the general process of development for the game, my implementation of A*, and the ups and downs I encountered.
 
 <div class="text-center pb-3">
-      <img class="img-fluid" src="../img/Puckle/Puckle_GamePlay.png" height="500px">
+      <img class="img-fluid" src="../img/Puckle/Puckle_GamePlay.png" height="400px">
 </div>
 
 ## The Basics
@@ -22,7 +22,7 @@ In the fall semester of 2022, I recreated the classic arcade game, Pac-Man, in U
 Before I can get into any of the fancy talk with A*, I want to talk about what these systems were built on / to work with: the core gameplay elements. As many of you might be familiar with, Pac-Man is a game where you as the player navigate a maze from a top down perspective.As you navigate the maze you collect small white circles called Pac-Dots, collect Power Pellets, and interact with ghosts in a predator vs. prey situation but with roles switching depending on set criteria (AKA whether you've just collected a Power Pellet). The end goal being to collect all of the Pac-Dots
 
 <div class="text-center pb-3">
-      <img class="img-fluid" src="../img/Puckle/PacMan.jpg" height="500px">
+      <img class="img-fluid" src="../img/Puckle/PacMan.jpg" height="400px">
 </div>
 
 I started off by creating our titular character as a yellow circle which could move in 4 directions: up, down, left and right. I defined a class to handle all collectables, their collisions with the player, and the point value they add to your total score. To distinguish between each type of collectible, I used Unity's tag system and would compare the tag when handling the player's collision with the collectible. Now that I had a player and some objects for it to interact with, I was still missing 2 core elements of the game, the walls of the maze and the ghosts which inhabited the maze.
