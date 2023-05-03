@@ -4,7 +4,7 @@ type: essay
 title: "My attempt at making Pac-Man clone Pt.1: A* Pathfinding"
 # All dates must be YYYY-MM-DD format!
 date: 2023-05-03
-published: false
+published: true
 labels:
   - Game Programming
   - A*
@@ -68,3 +68,7 @@ The next biggest issue I encountered was the impact of running A* for 4 ghosts, 
 </div>
 
 The last major issue I encountered was that issue I teased back at the beginning with the walls. The player could sometimes get themselves partially inside the wall, while on screen it doesn’t look like anything is wrong, the AI gets confused because the player ends up registering as being in a weird in-between location which A* can't determine a valid path to. While I never implemented this fix, my intended solution was to replace movement and maze generation with a grid of specifically defined tiles, instead of it being general Unity coordinates that were approximated to tile-like dimensions.
+
+<hr class="my-4">
+
+Github: <a href="https://github.com/IanMelvin/GPR-340-Final" target="_blank">Project Repo</a>
