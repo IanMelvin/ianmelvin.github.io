@@ -25,7 +25,7 @@ summary: "Mini Infinity is a 3rd person wave based shooter about a star-mage in 
 
 <main>
   <div class="text-center">
-    <div class="text-center">
+    <div class="text-center pb-3">
       <img class="img-fluid" src="../img/miniinfinity/MiniInfinity.png" width="800px">
     </div>
 
@@ -48,7 +48,7 @@ two groups.
     </p>
   </div>
 
-  <div class="text-center">
+  <div class="text-center pb-3">
     <img class="img-fluid" src="../img/miniinfinity/miCharacer_Enemy.png" width="800px">
   </div>
 
@@ -75,7 +75,7 @@ which came in its path.
     </p> 
   </div>
 
-  <div class="text-center">
+  <div class="text-center pb-3">
     <img class="img-fluid" src="../img/miniinfinity/miRelic.png" width="800px">
   </div>
 
@@ -101,7 +101,7 @@ score, wave number and number of active enemies.
     </p> 
   </div>
 
-  <div class="text-center">
+  <div class="text-center pb-3">
     <img class="img-fluid" src="../img/miniinfinity/miSettings_menu.png" width="800px">
   </div>
 
@@ -126,7 +126,7 @@ provide accurate visual feedback
     </p> 
   </div>
     
-  <div class="text-center">
+  <div class="text-center pb-3">
     <img class="img-fluid" src="../img/miniinfinity/miAnimation_Tree.png" width="800px">
   </div>
 
