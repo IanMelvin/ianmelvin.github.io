@@ -28,7 +28,7 @@ summary: "Dead Pedal is a 3rd person, action, open world driving game set in a f
 <main>
   <div class="text-center">
     <div class="ratio ratio-21x9 pb-3">
-      <iframe src="https://www.youtube.com/embed/hmdd7PEL4Rg" title="Dead Pedal Trailer" allowfullscreen width="800px"></iframe>
+      <iframe src="https://www.youtube.com/embed/7abHmjIE3aU" title="DP_Trailer_Final" allowfullscreen width="800px"></iframe>
     </div>
     
     <div>
@@ -36,7 +36,7 @@ summary: "Dead Pedal is a 3rd person, action, open world driving game set in a f
     </div>
     
     <div class="ratio ratio-21x9 pb-3">
-      <iframe src="https://www.youtube.com/embed/meNLQpxT9xs" title="Garage Video" allowfullscreen width="800px"></iframe>
+      <iframe src="https://www.youtube.com/embed/6ET4GNiLwMs" title="DP_GarageDemo" allowfullscreen width="800px"></iframe>
     </div>
 
     <h2>Garage:</h2>
