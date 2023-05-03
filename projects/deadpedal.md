@@ -67,6 +67,6 @@ Developed in UE5 and Visual Studios
 
 <hr class="my-4">
 
-Steam Page: <a href="https://store.steampowered.com/app/2250160/Dead_Pedal/">Click Here</a>
+Steam Page: <a href="https://store.steampowered.com/app/2250160/Dead_Pedal/" target="_blank">Click Here</a>
 
-itch.io Page: <a href="https://larnio.itch.io/dead-pedal">Click Here</a>
+itch.io Page: <a href="https://larnio.itch.io/dead-pedal" target="_blank">Click Here</a>
