@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "My attempt at making Pac-Man clone Pt.1: A* Pathfinding"
+title: "My Attempt At Making A Pac-Man Clone Pt.1: A* Pathfinding"
 # All dates must be YYYY-MM-DD format!
 date: 2023-05-03
 published: true
@@ -14,7 +14,7 @@ labels:
 In the fall semester of 2022, I recreated the classic arcade game, Pac-Man, in Unity 2D. This project had 2 main caveats, I needed to create the AI using A* pathfinding and the maze needed to have parts of it generated randomly every time the game was run. This post will go over the general process of development for the game, my implementation of A*, and the ups and downs I encountered.
 
 <div class="text-center pb-3">
-      <img class="img-fluid" src="../img/Puckle/Puckle_GamePlay.PNG" width="800px">
+      <img class="img-fluid" src="../img/Puckle/Puckle_GamePlay.png" height="500px">
 </div>
 
 ## The Basics
@@ -22,7 +22,7 @@ In the fall semester of 2022, I recreated the classic arcade game, Pac-Man, in U
 Before I can get into any of the fancy talk with A*, I want to talk about what these systems were built on / to work with: the core gameplay elements. As many of you might be familiar with, Pac-Man is a game where you as the player navigate a maze from a top down perspective.As you navigate the maze you collect small white circles called Pac-Dots, collect Power Pellets, and interact with ghosts in a predator vs. prey situation but with roles switching depending on set criteria (AKA whether you've just collected a Power Pellet). The end goal being to collect all of the Pac-Dots
 
 <div class="text-center pb-3">
-      <img class="img-fluid" src="../img/Puckle/PacMan.jpg" width="800px">
+      <img class="img-fluid" src="../img/Puckle/PacMan.jpg" height="500px">
 </div>
 
 I started off by creating our titular character as a yellow circle which could move in 4 directions: up, down, left and right. I defined a class to handle all collectables, their collisions with the player, and the point value they add to your total score. To distinguish between each type of collectible, I used Unity's tag system and would compare the tag when handling the player's collision with the collectible. Now that I had a player and some objects for it to interact with, I was still missing 2 core elements of the game, the walls of the maze and the ghosts which inhabited the maze.
@@ -64,7 +64,7 @@ While this all seems pretty straightforward, its development wasn’t. At first,
 The next biggest issue I encountered was the impact of running A* for 4 ghosts, this had been something I was advised to not have run each frame due to how long the algorithm takes to run. I ended up setting a coroutine which would let around 5 seconds pass between updating the path, was this overkill… I won’t lie, 5 seconds was overkill. The issue that would come from the 5 second delay was that the AI can easily get tricked by timing movements so the AI thinks the player will be in one space, and stop there, meanwhile the player has since moved on and now a 5 second head start over the ghost, who has to wait for an update.
 
 <div class="text-center pb-3">
-      <img class="img-fluid" src="../img/Puckle/Puckle_AStar_Delay.PNG" width="800px">
+      <img class="img-fluid" src="../img/Puckle/Puckle_AStar_Delay.png" width="800px">
 </div>
 
 The last major issue I encountered was that issue I teased back at the beginning with the walls. The player could sometimes get themselves partially inside the wall, while on screen it doesn’t look like anything is wrong, the AI gets confused because the player ends up registering as being in a weird in-between location which A* can't determine a valid path to. While I never implemented this fix, my intended solution was to replace movement and maze generation with a grid of specifically defined tiles, instead of it being general Unity coordinates that were approximated to tile-like dimensions.
