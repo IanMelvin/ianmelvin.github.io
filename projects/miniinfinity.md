@@ -104,4 +104,4 @@ animation controller:
 
 <hr class="my-4">
 
-itch.io Page: <a href="https://home-fries-and-associates.itch.io/mini-infinity">Mini Infinity itch.io page</a>
+itch.io Page: <a href="https://home-fries-and-associates.itch.io/mini-infinity" target="_blank">Mini Infinity itch.io page</a>
