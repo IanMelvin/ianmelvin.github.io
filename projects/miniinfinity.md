@@ -48,19 +48,17 @@ two groups.
     </p>
   </div>
 
-  <div class="text-center pb-3">
-    <img class="img-fluid" src="../img/miniinfinity/miCharacer_Enemy.png" width="800px">
-  </div>
-
   <div>
     <p>
 For the enemy AI I utilized Unity's Nav Mesh to determine the moveable terrain.
 And each enemy type had its own behavior system which helped to determine how
-it should act depending on what is happening in the world around it. Pictured
-bellow is a piece of Ranged Enemy AI:
+it should act depending on what is happening in the world around it.
     </p> 
   </div>
-
+    
+  <div class="text-center pb-3">
+    <img class="img-fluid" src="../img/miniinfinity/miCharacer_Enemy.png" width="800px">
+  </div>
 
   <h2>Item:</h2>
  
@@ -75,10 +73,6 @@ which came in its path.
     </p> 
   </div>
 
-  <div class="text-center pb-3">
-    <img class="img-fluid" src="../img/miniinfinity/miRelic.png" width="800px">
-  </div>
-
   <div>
     <p>
 In order to get the Relic fit for the game, I needed to set a framework to allow 
@@ -87,6 +81,10 @@ the flame VFX and the behind the scenes code that made it all come together and
 work seamlessly. This was handled in a way which allowed for an easy conversion
 to an item base class if we able to add more Relics. Pictured bellow is the Relic:
     </p> 
+  </div>
+    
+  <div class="text-center pb-3">
+    <img class="img-fluid" src="../img/miniinfinity/miRelic.png" width="800px">
   </div>
     
   <h2>UI:</h2>
@@ -101,10 +99,6 @@ score, wave number and number of active enemies.
     </p> 
   </div>
 
-  <div class="text-center pb-3">
-    <img class="img-fluid" src="../img/miniinfinity/miSettings_menu.png" width="800px">
-  </div>
-
   <div>
     <p>
 For the control binding, I decided to create my own system to manage and store
@@ -113,6 +107,10 @@ with the rest of the settings menu values, when the game is closed the player
 settings are saved and reloaded when the player next interacts with the settings 
 menu.
     </p> 
+  </div>
+    
+  <div class="text-center pb-3">
+    <img class="img-fluid" src="../img/miniinfinity/miSettings_menu.png" width="800px">
   </div>
     
   <h2>Animation Implementation:</h2>
@@ -125,10 +123,6 @@ and appropriately link them up to the actions the player and enemies were taking
 provide accurate visual feedback
     </p> 
   </div>
-    
-  <div class="text-center pb-3">
-    <img class="img-fluid" src="../img/miniinfinity/miAnimation_Tree.png" width="800px">
-  </div>
 
   <div>
     <p>
@@ -136,9 +130,13 @@ Both the player and enemies had animation controllers, each controller establish
 how the animations could and would transition between each other. In different movement
 and attack script for the characters, variables were set which changed what animations
 were active depending on what the player was doing. Pictured bellow is the player 
-animation controller:
+animation tree:
     </p> 
-  </div> 
+  </div>
+    
+  <div class="text-center pb-3">
+    <img class="img-fluid" src="../img/miniinfinity/miAnimation_Tree.png" width="800px">
+  </div>
  </div>
 </main>
 
