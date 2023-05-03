@@ -11,24 +11,43 @@ labels:
   - AI
 ---
 
-In the fall semester of 2022, I recreated the classic arcade game, Pac-Man, in Unity 2D. This project had 2 main caviots, I needed to create the AI using A* pathfinding and the maze needed to have parts of it generated randomly every time the game was run. This post will go over the process of development, the ups and downs I encountered, and all of the lessions I learned along the way.
+In the fall semester of 2022, I recreated the classic arcade game, Pac-Man, in Unity 2D. This project had 2 main caveats, I needed to create the AI using A* pathfinding and the maze needed to have parts of it generated randomly every time the game was run. This post will go over the process of development for A*, the ups and downs I encountered, and all of the lessons I learned along the way.
 
 [Insert media here]
 
 ## The Basics
 
-Before I can get into any of the fancy talk with A* and the maze generation, I want to talk about what these system were built on / to work with: the core gameplay elements. As many of you might be familiar with, Pac-Man is a game where you as the player, navigate a maze from a top down perspective, collect small white circles called Pac-Dots, collect Power Pellets, and interact with ghosts in a preditor vs. prey situation but with roles switching depending on set criteria (AKA whether you've just collected a Power Pellet).
+Before I can get into any of the fancy talk with A*, I want to talk about what these systems were built on / to work with: the core gameplay elements. As many of you might be familiar with, Pac-Man is a game where you as the player, navigate a maze from a top down perspective, collect small white circles called Pac-Dots, collect Power Pellets, and interact with ghosts in a predator vs. prey situation but with roles switching depending on set criteria (AKA whether you've just collected a Power Pellet).
 
 [Insert image of a game of pac-man]
 
-I started off by creating our titular character as a yellow circle which could move in 4 directions: up, down, left and right. From I defined a class to handle all collectables, their collisions with the player, and the point value. To distinguish between each type of collectable, I used Unity's tag system  and would compare the tag when handling the player collision. Now that I had a player and some objects for it to interact with, I still missing 2 cor elements of the game, the walls of the maze and the ghosts which inhabited the maze.
+I started off by creating our titular character as a yellow circle which could move in 4 directions: up, down, left and right. I defined a class to handle all collectables, their collisions with the player, and the point value. To distinguish between each type of collectable, I used Unity's tag system  and would compare the tag when handling the player collision. Now that I had a player and some objects for it to interact with, I was still missing 2 core elements of the game, the walls of the maze and the ghosts which inhabited the maze.
 
-The maze walls were pretty straight forward, I created a square that the player was incapable of moving through. The individual squares of wall would allow for shape making and placement when generating the maze. While I say this was straight forward, it did take me a few tries to get this collsion to work properly, and the way collisions were set up would lead to a bug with the Ghost AI I wouldn't notice till the end of development. 
+The maze walls were pretty straight forward, I created a square that the player was incapable of moving through. The individual squares of the wall would allow for shape making and placement when generating the maze. While I say this was straight forward, it did take me a few tries to get this collision to work properly, and the way collisions were set up would lead to a bug with the Ghost AI I wouldn't notice till the end of development. 
 
 [Insert media]
 
 ## The Research / Rules
 
-As the project's core elements came into being, I needed to get a better understanding of how Pac-Man work, specifically any rules releated to the mazes and how the ghosts behaved. For this project my research would involve use of both the game wiki's for both Pac-Man and Ms. Pac-Man, sites which catalogued all of the mazes, and blogs which went into the different behavior of each of the ghosts.
+As the project's core elements came into being, I needed to get a better understanding of how Pac-Man works, specifically any rules related to how the ghosts behaved and the mazes. For this project my research would involve use of both the game wiki's for both Pac-Man and Ms. Pac-Man, sites which cataloged all of the mazes, and blogs which went into the different behavior of each of the ghosts.
 
-For the mazes, I anaylsed the original Pac-Man maze and all 4 Ms. Pac-Man mazes attempting to generate a set of rules I could use in my own maze generation. The first rule I defined was that each half of the maze was a mirror image of itself, meaning I only had to generate half a maze and then fold the generated half onto the other half. The second rule was for consistent elements of the maze, such as warp tunnels and the ghost spawn zone. The ghost spawn zone was a box located in the middle of the map, skewing towards the upper half, and maintained a consistant position. The warp tunnels varried depending on the map, but had a max and minimun height they could be place on.
+Ghosts in Pac-Man are well regarded for their behaviors, with each ghost having its own unique way of chasing the player. Beyond that each ghost also had flee behavior when the player collected power pellets where the ghosts would try to navigate to the concerns and a scatter behavior which boils down to the ghosts moving towards the map corners. To keep things simple, I would only do the Flee and the basic Chase behavior.
+
+## A* Pathfinding
+
+Now that I’ve set the stage, let's dive into the reason most of you probably clicked on this post, A*. My implementation of A* is split into 2 classes, AStarSearch and PathNode. AStarSearch handles the actual searching while the PathNode class acts as a data type, containing the position of the Node, the map, the previous node and the 3 costs (g, h, and f).
+
+AStarSearch takes in a representation of the maze, the start node, (Ghost’s Position) and a goal node (Player’s Position). The first step of the algorithm is to check to see if the goal space contains a wall, if it does the algorithm checks the neighbors and will place the nearest open space as the new goal. Step 2 is to generate the costs for the start node (g being 0, h being the distance between the two path nodes, and f being the combination of the g and h costs) and declare the open and closed lists, with the open list containing the start node. These lists help to determine what nodes have been visited and what are yet to be visited.
+
+Now we enter the main loop of the search, where each iteration of the loop we get the Path Node with the lowest f cost, since it is the closest to the previous node/start node, check to see if it is the goal node and if not we keep going. First we remove the current node from the openList and add it to the closed list and check all of the node’s neighbors. With each neighbor I check if it’s already in the closed list, if not I calculate new cost values and check to see if the new costs would be less than their current cost (this is for PathNodes that come up as neighbors multiple times). If the new cost is less then the old cost, old costs are updated and the previous node value is set to the current node. Finally, if the Neighbor PathNode isn’t already in the open list already, it gets added. 
+
+When the goal is reached, a list is generated by backtracking from the goal to the start using the previous node value stored in each node. Once the list is full, it is reversed and passed to the Ghost. The Ghosts use A* in 2 ways, to get a path to the player and to get a path of fleeing.
+
+While this all seems pretty straightforward, its development wasn’t. At first, I was trying to figure out how I wanted to handle the implementation, I did a lot of research and found many different styles for implementing A* and in the process I found myself often trying to merge different styles or would pivot from one to the other when I got stumped. To get through this I had to restrict myself on what I could reference and boil it all down into what I needed, anything that was fluff got cut. 
+
+The next biggest issue I encountered was the performance impact of running A* for 4 ghosts, this had been something I was advised to not have run each frame. I ended up setting a coroutine which would let around 5 seconds pass before the next search could be run, was this overkill… I won’t lie, 5 seconds was overkill. The issue that would come from the 5 second delay was that the AI could easily get tricked into thinking it doesn’t need to move anymore since it’s reached its goal before the path is updated. 
+
+The last major issue I encountered was that issue I teased back at the beginning with the walls. The player could sometimes get themselves slighted inside the wall, while on screen it doesn’t look like anything is wrong, the AI gets confused because the player ends up registering as being in a weird in-between location that it can’t calculate a path to. While I never implemented this fix, my intended solution was to replace movement and object placement with a grid of specifically defined tiles, instead of it being general Unity coordinates. 
+
+## In Conclusion
+
