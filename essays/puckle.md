@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "Developing a Pac-Man clone using A*"
+title: "My attempt at making Pac-Man clone Pt.1: A* Pathfinding"
 # All dates must be YYYY-MM-DD format!
 date: 2023-03-29
 published: false
