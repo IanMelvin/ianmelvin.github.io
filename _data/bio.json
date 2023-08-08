@@ -56,21 +56,6 @@
       ]
     }
   ],
-  "volunteer":[
-     {
-       "company": "Tykhe",
-       "position": "Card Committee Member",
-       "website": "https://discord.com/servers/tykhe-bridge-of-unity-793671273485303858",
-       "startDate": "2023-04-24",
-       "endDate": "Present",
-       "summary": "As a member of the Card Committee, I develop new game content and ensure it is compatible with the games structure"
-       "highlights": [
-         "Join together with peers to craft new cards and iterate on existing content",
-         "Plan out fun ways to introduce cards to the player base",
-         "Working with Github and GIMP"
-       ]
-     }
-   ],
   "work": [
     {
       "company": "SEGS @ UVM",
