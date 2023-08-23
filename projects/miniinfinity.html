@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Mini Infinity | Ian Melvin | Professional Portfolio">
+    <meta name="description" content="Portfolio Website for Ian Melvin, Game Programmer">
+    <meta name="image" content="">
+    <meta name="keywords" content="Portfolio, Game Development, Game Programming, Programming, Projects, Blog, Game Industry">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ian Melvin | Professional Portfolio">
+    <meta property="og:url" content="https://ianmelvin.github.io/projects/miniinfinity.html">
+    <meta property="og:title" content="Mini Infinity | Ian Melvin | Professional Portfolio">
+    <meta property="og:description" content="Portfolio Website for Game Programmer Ian Melvin">
+    <meta property="og:image" content="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/rubik.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Mini Infinity | Ian Melvin | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Ian Melvin</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Blog</a>
+        <a class="nav-link" href="/aboutme">About Me</a>
+        <a href="/resume" class="btn btn-secondary">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4 px-5">
+  <div class="px-5 py-4">
+    <h1 class="display-4 text-center">Mini Infinity</h1>
+    <script type="text/javascript">
+  window.smartlook||(function(d) {
+    var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+    var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+    c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
+    })(document);
+    smartlook('init', '2fb05b8dec724caa0120461df1b0cf9bdc7826d4', { region: 'eu' });
+</script>
+
+<main>
+  <div class="text-center">
+    <div class="text-center pb-3">
+      <img class="img-fluid" src="../img/miniinfinity/MiniInfinity.png" width="800px" />
+    </div>
+
+  <div>
+    <p> In Mini Infinity, players take the role of Mini, a star-mage in training, tasked with defending themselves against many hordes of crystalline enemies. Players must enchant enemies and other objects around the arena to throw. Occasionally, powerful relics will appear that will allow Mini to change the tide of battle. Different events may also occur, such as lava pits, that will constantly keep the player on their toes.
+
+This game was created during a production class in my spring semester, during my third year, at Champlain College. In this 3D wave based shooter, the player controls Mini, a young star mage hoping to pass the trials their professor has set for them by defeating the waves of Crystalline enemies. As the main programmer for our game my implemented many of our games systems and mechanics including, Player and Enemy characters, Item, UI, and Animation implementation.
+    </p>
+  </div>
+
+  <h2>Character:</h2>
+ 
+  <div>
+    <p>
+The player needed to be able to move around the map and effectively combat the
+approaching enemies meanwhile the enemies needed to be able to move towards and
+attack the player. To handle all of this I created a player movement and actions
+system and multiple enemy AI's to allow for the necessary interaction between the 
+two groups.
+    </p>
+  </div>
+
+  <div>
+    <p>
+For the enemy AI I utilized Unity's Nav Mesh to determine the moveable terrain.
+And each enemy type had its own behavior system which helped to determine how
+it should act depending on what is happening in the world around it.
+    </p> 
+  </div>
+    
+  <div class="text-center pb-3">
+    <img class="img-fluid" src="../img/miniinfinity/miCharacer_Enemy.png" width="800px" />
+  </div>
+
+  <h2>Item:</h2>
+ 
+  <div>
+    <p>
+One of the system we included in our game was referred to as the Relic system. 
+Relics are items that can spawn throughout the game and help the player if they 
+are being overwhelmed by the number of enemies around them. In the game we only 
+have one type of Relic, the Leo or Fire Relic (Pictured bellow). The Leo Relic 
+when put on the ground would blast out a cone of fire destroying any enemies 
+which came in its path.
+    </p> 
+  </div>
+
+  <div>
+    <p>
+In order to get the Relic fit for the game, I needed to set a framework to allow 
+for the Relic to have 2 different materials (depending on if it's active or not),
+the flame VFX and the behind the scenes code that made it all come together and 
+work seamlessly. This was handled in a way which allowed for an easy conversion
+to an item base class if we able to add more Relics. Pictured bellow is the Relic:
+    </p> 
+  </div>
+    
+  <div class="text-center pb-3">
+    <img class="img-fluid" src="../img/miniinfinity/miRelic.png" width="800px" />
+  </div>
+    
+  <h2>UI:</h2>
+
+  <div>
+    <p>
+I created a full settings menu to give the player the ability to customize the
+experience they are having while playing the game, with options to adjust volume,
+rebind their controls, and change camera sensitivity. In while in play there are
+multiple panels which convey to the player information about their run: Health,
+score, wave number and number of active enemies.
+    </p> 
+  </div>
+
+  <div>
+    <p>
+For the control binding, I decided to create my own system to manage and store
+the player preferences and update any scripts which rely on player input. Like
+with the rest of the settings menu values, when the game is closed the player
+settings are saved and reloaded when the player next interacts with the settings 
+menu.
+    </p> 
+  </div>
+    
+  <div class="text-center pb-3">
+    <img class="img-fluid" src="../img/miniinfinity/miSettings_menu.png" width="800px" />
+  </div>
+    
+  <h2>Animation Implementation:</h2>
+
+  <div>
+    <p>  
+For this project we had a variety of animation to go with both our main character
+and our enemies. For each animated model, I needed to create an animation controller
+and appropriately link them up to the actions the player and enemies were taking to
+provide accurate visual feedback
+    </p> 
+  </div>
+
+  <div>
+    <p>
+Both the player and enemies had animation controllers, each controller established
+how the animations could and would transition between each other. In different movement
+and attack script for the characters, variables were set which changed what animations
+were active depending on what the player was doing. Pictured bellow is the player 
+animation tree:
+    </p> 
+  </div>
+    
+  <div class="text-center pb-3">
+    <img class="img-fluid" src="../img/miniinfinity/miAnimation_Tree.png" width="800px" />
+  </div>
+ </div>
+</main>
+
+<hr class="my-4" />
+
+<p>itch.io Page: <a href="https://home-fries-and-associates.itch.io/mini-infinity" target="_blank">Mini Infinity itch.io page</a></p>
+
+  </div>
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="My Attempt At Making A Pac-Man Clone Pt.1: A* Pathfinding | Ian Melvin | Professional Portfolio">
+    <meta name="description" content="Portfolio Website for Ian Melvin, Game Programmer">
+    <meta name="image" content="">
+    <meta name="keywords" content="Portfolio, Game Development, Game Programming, Programming, Projects, Blog, Game Industry">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ian Melvin | Professional Portfolio">
+    <meta property="og:url" content="https://ianmelvin.github.io/essays/puckle.html">
+    <meta property="og:title" content="My Attempt At Making A Pac-Man Clone Pt.1: A* Pathfinding | Ian Melvin | Professional Portfolio">
+    <meta property="og:description" content="Portfolio Website for Game Programmer Ian Melvin">
+    <meta property="og:image" content="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/rubik.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>My Attempt At Making A Pac-Man Clone Pt.1: A* Pathfinding | Ian Melvin | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Ian Melvin</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Blog</a>
+        <a class="nav-link" href="/aboutme">About Me</a>
+        <a href="/resume" class="btn btn-secondary">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">My Attempt At Making A Pac-Man Clone Pt.1: A* Pathfinding</h1>
+  <span class="date">03 May 2023</span>
+  <hr>
+  <p>In the fall semester of 2022, I recreated the classic arcade game, Pac-Man, in Unity 2D. This project had 2 main caveats, I needed to create the AI using A* pathfinding and the maze needed to have parts of it generated randomly every time the game was run. This post will go over the general process of development for the game, my implementation of A*, and the ups and downs I encountered.</p>
+
+<div class="text-center pb-3">
+      <img class="img-fluid" src="../img/Puckle/Puckle_GamePlay.png" width="300px" />
+</div>
+
+<h2 id="the-basics">The Basics</h2>
+
+<p>Before I can get into any of the fancy talk with A*, I want to talk about what these systems were built on / to work with: the core gameplay elements. As many of you might be familiar with, Pac-Man is a game where you as the player navigate a maze from a top down perspective.As you navigate the maze you collect small white circles called Pac-Dots, collect Power Pellets, and interact with ghosts in a predator vs. prey situation but with roles switching depending on set criteria (AKA whether you’ve just collected a Power Pellet). The end goal being to collect all of the Pac-Dots</p>
+
+<div class="text-center pb-3">
+      <img class="img-fluid" src="../img/Puckle/PacMan.jpg" width="300px" />
+</div>
+
+<p>I started off by creating our titular character as a yellow circle which could move in 4 directions: up, down, left and right. I defined a class to handle all collectables, their collisions with the player, and the point value they add to your total score. To distinguish between each type of collectible, I used Unity’s tag system and would compare the tag when handling the player’s collision with the collectible. Now that I had a player and some objects for it to interact with, I was still missing 2 core elements of the game, the walls of the maze and the ghosts which inhabited the maze.</p>
+
+<p>The maze walls were pretty straight forward, I created a square that the player was incapable of moving through. These squares would be combined to shape the maze and any obstacles the player would encounter. While I say this was straight forward, it did take me a few tries to get this collision to work properly, and the way collisions were set up would lead to a bug with the Ghost’s pathfinding that I wouldn’t notice until the end of development.</p>
+
+<div class="text-center pb-3">
+      <img class="img-fluid" src="../img/Puckle/Puckle_TheBeginning.PNG" width="800px" />
+</div>
+
+<h2 id="the-research--rules">The Research / Rules</h2>
+
+<p>As the project’s core elements came into being, I needed to get a better understanding of how Pac-Man works, specifically any rules related to how the ghosts behaved and the patterns for making the mazes. For this project, my research would involve use of the game wiki for both Pac-Man and Ms. Pac-Man, as well as sites which cataloged all of the mazes, and blogs which went into the different behaviors of the ghosts.</p>
+
+<p>Ghosts in Pac-Man are well regarded for their behaviors, with each ghost having its own unique way of chasing the player. Beyond that each ghost also has flee behavior and a scatter behavior. When the player collects power pellets, the ghosts enter their flee behavior and try to get away from the player. The Scatter is when the ghosts navigate to their home concern of the maze for a duration. To keep things simple, I would only do the Flee and the basic Chase behavior.</p>
+
+<h2 id="a-pathfinding">A* Pathfinding</h2>
+
+<p>Now that I’ve set the stage, let’s dive into the reason most of you probably clicked on this post, A<em>. My implementation of A</em> is split into 2 classes, AStarSearch and PathNode. AStarSearch handles the actual searching while the PathNode class acts as a data type, containing the position of the Node, the map, the previous node and the 3 costs. The 3 types of cost are the path cost of a node (g), the estimated distance between a node and the goal (h), and combination of the previous 2 costs (f = g + h).</p>
+
+<div class="text-center pb-3">
+      <img class="img-fluid" src="../img/Puckle/Puckle_HCost.PNG" width="800px" />
+</div>
+
+<p>AStarSearch takes in a representation of the maze, the start node (Ghost’s Position), and a goal node (Player’s Position). The first step of the algorithm is to check to see if the goal space contains a wall, if it does the algorithm checks the neighbors and will place the nearest open space as the new goal. Step 2 is to generate the costs for the start node (g being 0, h being the distance between the two path nodes, and f being the combination of the g and h costs) and declare the open and closed lists, with the open list containing the start node. These lists help to determine what nodes have been visited and what are yet to be visited.</p>
+
+<p>Now we enter the main loop of the search, where with each iteration of the loop we get the Path Node with the lowest f cost, then check to see if it is the goal node and if not we keep going. First we remove the current node from the openList and add it to the closed list and check all of the current node’s neighbors. With each neighbor it checks if it’s already in the closed list, if not it calculates new cost values and checks to see if the new costs would be less than their current cost. If the new cost is less then the old cost, old costs are updated and the previous node value is set to the current node. Finally, if the Neighbor PathNode isn’t already in the open list, it gets added.</p>
+
+<div class="text-center pb-3">
+      <img class="img-fluid" src="../img/Puckle/Puckle_Neighbor_Check.PNG" width="800px" />
+</div>
+
+<p>When the goal is reached, a list is generated by backtracking from the goal to the start using the previous node value stored in each node. Once the list is complete, it is reversed so the start node is index 0 and passed to the Ghost. The Ghosts use A* in 2 ways, to get a path to the player and to get a path for fleeing.</p>
+
+<h2 id="the-problems">The Problems</h2>
+
+<p>While this may all seems pretty straightforward, its development wasn’t. At first, I was trying to figure out how I wanted to handle the implementation, I did a lot of research and found many different styles for implementing A* and in the process I found myself often trying to merge different styles or would pivot from one to the other when I got stumped. To get through this I had to restrict myself on what I could reference and boil it all down into what I needed, anything that was fluff got cut.</p>
+
+<p>The next biggest issue I encountered was the impact of running A* for 4 ghosts, this had been something I was advised to not have run each frame due to how long the algorithm takes to run. I ended up setting a coroutine which would let around 5 seconds pass between updating the path, was this overkill… I won’t lie, 5 seconds was overkill. The issue that would come from the 5 second delay was that the AI can easily get tricked by timing movements so the AI thinks the player will be in one space, and stop there, meanwhile the player has since moved on and now a 5 second head start over the ghost, who has to wait for an update.</p>
+
+<div class="text-center pb-3">
+      <img class="img-fluid" src="../img/Puckle/Puckle_AStar_Delay.png" width="800px" />
+</div>
+
+<p>The last major issue I encountered was that issue I teased back at the beginning with the walls. The player could sometimes get themselves partially inside the wall, while on screen it doesn’t look like anything is wrong, the AI gets confused because the player ends up registering as being in a weird in-between location which A* can’t determine a valid path to. While I never implemented this fix, my intended solution was to replace movement and maze generation with a grid of specifically defined tiles, instead of it being general Unity coordinates that were approximated to tile-like dimensions.</p>
+
+<hr class="my-4" />
+
+<p>Github: <a href="https://github.com/IanMelvin/GPR-340-Final" target="_blank">Project Repo</a></p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

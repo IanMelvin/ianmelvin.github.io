@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Dead Pedal | Ian Melvin | Professional Portfolio">
+    <meta name="description" content="Portfolio Website for Ian Melvin, Game Programmer">
+    <meta name="image" content="">
+    <meta name="keywords" content="Portfolio, Game Development, Game Programming, Programming, Projects, Blog, Game Industry">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ian Melvin | Professional Portfolio">
+    <meta property="og:url" content="https://ianmelvin.github.io/projects/deadpedal.html">
+    <meta property="og:title" content="Dead Pedal | Ian Melvin | Professional Portfolio">
+    <meta property="og:description" content="Portfolio Website for Game Programmer Ian Melvin">
+    <meta property="og:image" content="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/rubik.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Dead Pedal | Ian Melvin | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Ian Melvin</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Blog</a>
+        <a class="nav-link" href="/aboutme">About Me</a>
+        <a href="/resume" class="btn btn-secondary">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4 px-5">
+  <div class="px-5 py-4">
+    <h1 class="display-4 text-center">Dead Pedal</h1>
+    <script type="text/javascript">
+  window.smartlook||(function(d) {
+    var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+    var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+    c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
+    })(document);
+    smartlook('init', '2fb05b8dec724caa0120461df1b0cf9bdc7826d4', { region: 'eu' });
+</script>
+
+<main>
+  <div class="text-center">
+    <div class="ratio ratio-21x9 pb-3">
+      <iframe src="https://www.youtube.com/embed/7abHmjIE3aU" title="DP_Trailer_Final" allowfullscreen="" width="800px"></iframe>
+    </div>
+    
+    <div>
+      <p class="pt-3 pb-1">Dead Pedal is a 3rd person, action, open world driving game set in a fictional version of the Mojave desert, where your goal is to cause as much chaos and destruction as possible. Go out and explore the world's threats to get revenge for your fallen goldfish, Ted. </p>
+    </div>
+    
+    <div class="ratio ratio-21x9 pb-3">
+      <iframe src="https://www.youtube.com/embed/6ET4GNiLwMs" title="DP_GarageDemo" allowfullscreen="" width="800px"></iframe>
+    </div>
+
+    <h2>Garage:</h2>
+
+    <div>
+      <p>
+When the garage is first loaded in it generates menu tabs and item buttons based on data tables. The menu creates new item buttons as needed when switching tabs, and make any buttons that aren't needed by a tab unseen and not intractable by the player until the player goes to a tab that needs them. Each data table (Pictured below) contains the values which correspond to each button including: item name, item ID, static mesh, material instance, locked status, etc. The data tables are designed to be easily modified by other members of the team, so the system is not dependent on me for adding new customization options. 
+      </p>
+    </div>
+
+    <div class="text-center pb-3">
+      <img class="img-fluid" src="../img/deadpedal/dpDataTable.PNG" width="800px" />
+    </div>
+    
+    <div>
+      <p>
+When a user clicks an item button, system passes the corresponding car part to a storage object. When you leave the garage the player car pulls and applies the new meshes and materials from the storage object. 
+      </p>
+    </div>
+    
+    <h2>Settings Menu:</h2>
+    
+    <div>
+      <p>
+The settings menu was designed with the intent to provide the player with a variety of options to help improve their experience. It started out with an interest in trying to provide ways to optimize graphical performance as well as allow the player to rebind controls. The design became oriented primarily around buttons and trying to provide each sub option as a simple click. While this was easy to set up, it took up a lot of space on the screen.
+      </p>
+    </div>
+    
+    <div class="text-center pb-3">
+      <img class="img-fluid" src="../img/deadpedal/dpSettingsMenu_old.PNG" width="800px" />
+    </div>
+    
+    <div>
+      <p>
+I made a smaller UI widget which allowed the player to push arrow keys to change the settings values, doing this allowed for more options to be displayed and make it easier to keep track of which setting the player is interacting with. In the push for optimization I projected one of Unreals functions, a benchmark test, to the front in the form of a button. When pressed, the benchmark button checks the computer and updates all of the users settings to reflect the results of the test. 
+      </p>
+    </div>
+    
+    <div class="text-center pb-3">
+      <img class="img-fluid" src="../img/deadpedal/dpSettingsMenu.png" width="800px" />
+    </div>
+
+    <h2>Technical Information:</h2> 
+    
+    <div>
+      <p>
+Developed in UE5 and Visual Studios
+      </p>
+    </div>
+ </div>
+</main>
+
+<hr class="my-4" />
+
+<p>Steam Page: <a href="https://store.steampowered.com/app/2250160/Dead_Pedal/" target="_blank">Click Here</a></p>
+
+<p>itch.io Page: <a href="https://larnio.itch.io/dead-pedal" target="_blank">Click Here</a></p>
+
+  </div>
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
