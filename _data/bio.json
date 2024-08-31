@@ -25,11 +25,11 @@
   "skills": [
     {
       "name": "Languages",
-      "keywords": [ "C", "C++", "C#", "Java" ]
+      "keywords": [ "C", "C++", "C#" ]
     },
     {
       "name": "Development Tools",
-      "keywords": [ "Unreal Engine 5", "UMG", "Unity", "Git/GitHub", "Figma"]
+      "keywords": [ "Unreal Engine 5", "Unity", "Visual Studios IDE", "Git/GitHub", "Figma"]
     },
     {
       "name": "Project Management Ideology",
@@ -41,7 +41,7 @@
     },
     {
       "name": "Soft Skills",
-      "keywords": [ "Collaboration", "Communication" ]
+      "keywords": [ "Collaboration", "Communication", "Problem Solving" ]
     }
   ],
   "education": [
@@ -57,16 +57,29 @@
   ],
   "work": [
     {
+      "company": "Faycrest Studios",
+      "position": "Contract Unreal Engine 5 Programmer",
+      "website": "https://faycrest.com/",
+      "startDate": "2023-09-12",
+      "endDate": "Present",
+      "summary": "Developing an arcade combat racing game called Dead Pedal and developing games under contract for other companies",
+      "highlights": [
+        "Integrate Vehicle AI and driving systems while expanding the features of both",
+        "Collaborate with artists to ensure their assets are compatible with the corresponding systems",
+        "Working in a code base developed by multiple other programmers prior to me joining",
+      ]
+    },
+    {
       "company": "SEGS @ UVM",
-      "position": "Unity Programmer",
+      "position": "Contract Unity Programmer",
       "website": "https://www.uvm.edu/segs/",
       "startDate": "2023-01-30",
       "endDate": "Present",
-      "summary": "Developing a Flood Simulator game in Unity for the Cooperative Institute for Research to Operations in Hydrology",
+      "summary": "Develop WebGL games in Unity for studying how people respond to situations, like flooding, with the data used for research papers",
       "highlights": [
         "Working in Unity and Blender, using C#",
-        "The goal is to study the impact of government warnings, the local news, and community interactions on people’s decision making",
-        "Collaborating in weekly meetings to develop a strong gameplay system and make sure it aligns with the data we want to collect"
+        "Construct custom systems for things incompatible with Unity’s WebGL builds (like Gifs & Fluid Simulation)",
+        "Collaborate in meetings with fellow programmers and researchers to ensure the game gathers needed data",
       ]
     },
     {
