@@ -4,7 +4,7 @@ type: essay
 title: "My Attempt At Making A Pac-Man Clone Pt.1: A* Pathfinding"
 # All dates must be YYYY-MM-DD format!
 date: 2023-05-03
-published: false
+published: true
 labels:
   - Game Programming
   - A*
