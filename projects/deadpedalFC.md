@@ -3,7 +3,7 @@ layout: project
 type: project
 image: img/deadpedalFC/deadpedal_fc_logo.png
 title: "Deadpedal (Faycrest Studios)"
-date: September 2023 - Present Day 2024
+date: September 2023 - Present
 year: 2023 - 2024
 published: true
 teamSize: 15
