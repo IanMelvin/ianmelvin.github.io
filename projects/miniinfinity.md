@@ -4,6 +4,7 @@ type: project
 image: img/miniinfinity/miniInfinity_logo_BG.png
 title: "Mini Infinity"
 date: January 2022 - May 2022
+year: 2022 - 2022
 published: true
 teamSize: 9
 labels:
