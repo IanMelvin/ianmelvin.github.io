@@ -12,9 +12,8 @@ labels:
   - C++
   - Blueprints
   - Git
-  - Steam
   - itch.io
-summary: "Deadpedal is a fast pace 3D arcade-style combat racing game, where twelve racers from around the world are invited to compete in an underground race with one goal in mind, to win."
+summary: "Deadpedal is a fast pace 3D arcade-style combat racing game currently in development, where twelve racers from around the world are invited to compete in an underground race with one goal in mind, to win."
 ---
 
 <script type='text/javascript'>
