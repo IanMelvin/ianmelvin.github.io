@@ -48,3 +48,10 @@ a {
   background-color: var(--bs-white);
   border-top: none;
 }
+
+.title-underline {
+	border-top: 5px solid #010101;
+	border-radius: 5px;
+	
+	width: 50%;
+}
