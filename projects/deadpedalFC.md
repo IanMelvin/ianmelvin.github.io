@@ -80,11 +80,13 @@ I made a smaller UI widget which allowed the player to push arrow keys to change
       <img class="img-fluid" src="../img/deadpedalFC/deadpedal_fc_logo.png" width="800px">
     </div>
 
-    <h2>Technical Information:</h2> 
-    
+    <h2>Tools & Technical Information</h2> 
+    <hr class="rounded title-underline">
     <div>
       <p>
-Developed in Unreal Engine 5 with Visual Studios and Git
+        {% for label in page.labels %}
+        <span style="background-color: var(--tf-pill-bg)" class="badge rounded-pill">{{ label }}</span>
+        {% endfor %}
       </p>
     </div>
  </div>
