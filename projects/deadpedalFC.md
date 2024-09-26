@@ -85,7 +85,7 @@ I made a smaller UI widget which allowed the player to push arrow keys to change
     <div>
       <p>
         {% for label in page.labels %}
-        <span style="background-color: var(--tf-pill-bg)" class="tools-text">{{ label }}</span>
+        <span style="background-color: var(--tf-pill-bg)" class="badge rounded-pill">{{ label }}</span>
         {% endfor %}
       </p>
     </div>
