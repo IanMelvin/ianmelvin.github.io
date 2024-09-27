@@ -43,7 +43,7 @@ summary: "Deadpedal is a fast pace 3D arcade-style combat racing game currently 
     </div>
 
     <h2 class="text-center">Cars</h2>
-    <hr class="my-4 mx-auto" style"width: 200px;">
+    <hr class="my-4 mx-auto" style="width: 200px;">
     <div>
       <p>
 For my programming test when I was first recruited to the studio, I was handed a vehicle 
@@ -71,7 +71,7 @@ acceleration, this being seem primarily with the Speed Boost powerup and Boost P
     </div>
     
     <h2 class="text-center">Powerups & Environmental Hazards</h2>
-    <hr class="my-4 mx-auto">
+    <hr class="my-4 mx-auto" style="width: 200px;">
     <div>
       <p>
 After the departure of a fellow programmer from the team, I inhertied responsibility for
@@ -106,7 +106,7 @@ function.
     </div>
 
     <h2 class="text-center">UI</h2>
-    <hr class="my-4 mx-auto" style"width: 200px;">
+    <hr class="my-4 mx-auto" style="width: 200px;">
     <div>
       <p>
 One of my reocurring roles has been working with UI team to add / iterate on the functionality for the UI as 
