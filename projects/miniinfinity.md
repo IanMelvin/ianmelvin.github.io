@@ -134,7 +134,7 @@ animation tree:
     </p> 
   </div>
 
-  <h2 class="text-center my-4 fs-1">Tools & Technical Information</h2> 
+  <h2 class="text-center my-4 fs-1">Tools</h2> 
     <hr class="my-4">
     <div class="text-center">
       <p>

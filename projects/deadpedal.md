@@ -74,7 +74,7 @@ summary: "Dead Pedal is a 3rd person, action, open world driving game set in a f
     <div class="text-center pb-3">
       <img class="img-fluid" src="../img/deadpedal/dpSettingsMenu.png" width="700px">
     </div>
-    <h2 class="text-center my-4 fs-1">Tools & Technical Information</h2> 
+    <h2 class="text-center my-4 fs-1">Tools</h2> 
     <hr class="my-4">
     <div class="text-center">
       <p>
