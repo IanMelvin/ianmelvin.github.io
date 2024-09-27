@@ -12,6 +12,7 @@ labels:
   - UMG UI
   - C++
   - Blueprints
+  - Visual Studios
   - Git
   - Trello
 summary: "Deadpedal is a fast pace 3D arcade-style combat racing game currently in development, where twelve racers from around the world are invited to compete in an underground race with one goal in mind, to win."
@@ -35,7 +36,7 @@ summary: "Deadpedal is a fast pace 3D arcade-style combat racing game currently 
     <div>
       <p class="text-left pt-3 pb-1 fs-5">
 						  Deadpedal is a fast pace 3D arcade-style combat racing game. You race against AI in single player or against your friends and strangers in online multiplayer. Pickup powerups and sabotage your opponents, while you race on various tracks. Players can choose between twelve racers, hailing from around the world, who are invited to compete in an underground racing series with one goal in mind, to win.<br><br>
-						  While Deadpedal has been in development for many years, my tenure on the game started in September of 2023 and has continued to present day. We are currently a team of 15 developers and have varied in size over the time of the game's development. We plan to release on steam in late 2025</p>
+						  While Deadpedal has been in development for many years, my tenure on the game started in September of 2023 and has continued to present day. We are currently a team of 15 developers and have varied in size over the time of the game's development. We plan to release on steam in late 2025.</p>
     </div>
 
     <h2 class="text-center my-4 fs-1">Cars</h2>
@@ -70,7 +71,7 @@ summary: "Deadpedal is a fast pace 3D arcade-style combat racing game currently 
     <hr class="my-4">
 
     <div class="text-center">
-      <img class="img-fluid" src="../img/deadpedalFC/deadpedal_fc_logo.png" width="800px">
+      <img class="img-fluid" src="../img/deadpedalFC/deadpedal_fc_logo.png" width="500px">
     </div>
     
     <div>
