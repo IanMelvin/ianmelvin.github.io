@@ -42,8 +42,12 @@ summary: "Develop WebGL games that are used to gather data on how people respond
     </div>
     <div>
       <p class="text-left pb-1 fs-5">
-						  For my programming test when I was first recruited to the studio, I was handed a vehicle system and an AI system and told to make them function together. Since then, everything the team and I have done with the cars has been built around the marriage of the two systems. I have worked on adding support for the various power ups, overhauling the camera, adjusting the car's gravity, max speed, acceleration, suspension, and more.<br><br>
-							  Deadpedal is a complicated game and continues to go through various iterations on how we want it to feel when the players are racing around the various tracks. After a demo build went out internally, I was tasked with overhauling the existing player camera setup to better convey speed and to implement camera drag based on the strength of the car's acceleration, this being seen primarily with the Speed Boost powerup and Boost Pads.
+						  No matter what type of serious game I'm developing, the UI is always the most important piece of the game. The UI is what conveys the rules of
+this world to the player, it's how the player makes their choices and it's what gives the player an idea of how well they're doing. Due to the size 
+of the teams for these project being very small, I take on the role of both UI Programmer and UI Designer, in uncommon cases I serve as the UI 
+Artist as well. At its core, I try to keep the UI simple and reduce distractions while working with the researchers on the team to make sure what 
+is presented is clear and concise, one of the main ways we do this is by breaking down blocks of text into images with brief summaries. If I can 
+replace text with a clear and effective visual element, I do.
       </p>
     </div>
     <h2 class="text-center my-4 fs-1">WebGL & Performance</h2>
@@ -53,18 +57,22 @@ summary: "Develop WebGL games that are used to gather data on how people respond
     </div>
     <div>
       <p class="text-left pb-1 fs-5">
-						  After the departure of a fellow programmer from the team, I inherited responsibility for the powerups. At the time there was only a template, a manager component for the player, two power ups in a prototyped state. Since I took over, I expanded the total to 7 power ups and have continued to update the manager to expand its ability to interact with other systems such as the HUD and the player camera, for when the player uses a Speed Boost to increase their acceleration to effect camera drag. The current power ups include: Speed Boost, Homing Missile, Shockwave, Shield, Smokescreen, and more.<br><br>
-							  One of the unique elements of Deadpedal is that each track comes with an Environmental Hazard, such as the volcanic eruption on the tropical island track or the explosion of an old gas station on our western usa desert track. In the game, these take the form of power ups that players can pickup, unlike regular powerups they alter the track and serve as a potential hazard to every player. These have been a fun challenge as they need to work within the powerup structure but effect systems outside of the manager I've had to work closely with artists for both Powerups and Environmental Hazards, mainly the VFX team, to ensure smooth implementation of their assets and that it we have a unified vision of how these systems function.
-      </p>
-    </div>
-    <h2 class="text-center my-4 fs-1">User Interface</h2>
-    <hr class="my-4">
-    <div class="text-center">
-      <img class="img-fluid" src="../img/deadpedalFC/deadpedal_fc_logo.png" width="700px">
-    </div>
-    <div>
-      <p class="text-left pb-1 fs-5">
-						  One of my recurring roles has been working with the UI team to add / iterate on the functionality for the UI as well as to help plan potential systems to support the UI, such as how to distinguish between input from Playstation and Xbox controllers. We ended up putting this on hold in favor of a general check for Mouse and Keyboard vs Gamepad, having the option toggle controller specific UI being in the settings. While working on the UI, I've developed data structures to help manage the data being passed to the UI with the first one being for the leaderboard. The leaderboard structure has allowed me to focus what data is passed over to the UI code while being easily expandable whenever the team decides to change what information to display.
+						  One of the big challenges with developing these games comes from the limitation inherent to Unity's WebGL capabilities and the server's that are used 
+to host the game when it's up for people to play. During the ongoing development of a game about a town flooding, the team wanted realistic looking 3D 
+water going across terrain based on a Vermont town. After a lot of research and prototyping, I determined the best solution would be to create a fluid 
+simulation in blender on a replica of the Vermont-inspired town being built in Unity and play it in engine. The fluid simulation would be played as an 
+Alembic Animation, we ran into some problems with this, the first one being that the alembic file type isn't supported by Unity's WebGL. In an attempt 
+to fix it we moved to recording the flood in Unity and playing the video during run time, Unity WebGL has issues with playing videos stored in the project 
+so I set up the project to stream the videos which were being stored in a public git repo. While this generally worked for playing the videos, it was 
+inconsistent and left many testers with just the UI overlaying a gray screen. Our current and final solution to this problem came from realizing that we 
+could export each individual frame of the fluid simulation as fbx files and build a class to "play" the animation by changing which objects were visible 
+in the scene. To cut build size, I lowered the quality of the frames in blender and cut out every other to cutting out 2/3 frames, while this made the 
+animation look a little choppy in some area it allowed for an overall better product and with other visual effects in the scene helped to mask these 
+imperfections.<br><br>
+							  Performance issues are not just a fluid simulation issue, and while most of the serious games I work on don't need major optimization to run effectively, the flood game has continued to need optimization efforts as we expand it's features to include an active intersection and a social media feed. I work with 
+the profiler and researched various techniques to reduce memory and cpu load, with many being as simple as removing print to console lines left over from 
+testing done by the team. Many of these optimizations ended up being targeted at the UI, while not a major drag on performance, there was room to make to 
+lower its memory and cpu usage by reducing what UI elements could be interacted with by removing raycast targeting.
       </p>
     </div>
     <h2 class="text-center my-4 fs-1">Tools</h2> 
