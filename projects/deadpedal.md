@@ -11,9 +11,9 @@ labels:
   - Unreal 5
   - UMG UI
   - C++
+  - Blueprints
+  - Visual Studios
   - Git
-  - Steam
-  - itch.io
 summary: "Dead Pedal is a 3rd person, action, open world driving game set in a fictional version of the Mojave desert."
 ---
 
@@ -49,7 +49,7 @@ summary: "Dead Pedal is a 3rd person, action, open world driving game set in a f
       </p>
     </div>
     <div class="text-center pb-3">
-      <img class="img-fluid" src="../img/deadpedal/dpDataTable.PNG" width="500px">
+      <img class="img-fluid" src="../img/deadpedal/dpDataTable.PNG" width="700px">
     </div>
     <div>
       <p class="text-left pb-1 fs-5">
@@ -64,7 +64,7 @@ summary: "Dead Pedal is a 3rd person, action, open world driving game set in a f
       </p>
     </div>
     <div class="text-center pb-3">
-      <img class="img-fluid" src="../img/deadpedal/dpSettingsMenu_old.PNG" width="500px">
+      <img class="img-fluid" src="../img/deadpedal/dpSettingsMenu_old.PNG" width="700px">
     </div>
     <div>
       <p class="text-left pb-1 fs-5">
@@ -72,7 +72,7 @@ summary: "Dead Pedal is a 3rd person, action, open world driving game set in a f
       </p>
     </div>
     <div class="text-center pb-3">
-      <img class="img-fluid" src="../img/deadpedal/dpSettingsMenu.png" width="500px">
+      <img class="img-fluid" src="../img/deadpedal/dpSettingsMenu.png" width="700px">
     </div>
     <h2 class="text-center my-4 fs-1">Tools & Technical Information</h2> 
     <hr class="my-4">
