@@ -29,9 +29,9 @@ summary: "Deadpedal is a fast pace 3D arcade-style combat racing game currently 
 
 <main>
   <div>
-    <div style="max-width: 1024px; margin: 10vw auto;">	  
-      <div class="text-center" style="position: relative; padding-bottom: 75%; height: 0px;">
-        <iframe src="https://www.youtube.com/embed/f6xTHd7CBD0?si=ooNljA1lKjgeIscB" title="Deadpedal Progress" allowfullscreen style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+    <div style="max-width: 700px; margin: 1vw auto;">	  
+      <div class="text-center" style="position: relative; padding-bottom: 57%; height: 0px;">
+        <iframe src="https://www.youtube.com/embed/f6xTHd7CBD0?si=ooNljA1lKjgeIscB" title="Deadpedal Demo" allowfullscreen style="position: absolute; top: 0px; left: 0px; width: 100%; height: 99%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
       </div>
     </div>	    
     <div>
