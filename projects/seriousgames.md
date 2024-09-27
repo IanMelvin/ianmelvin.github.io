@@ -64,7 +64,11 @@ simulation in blender on a replica of the Vermont-inspired town being built in U
 Alembic Animation, we ran into some problems with this, the first one being that the alembic file type isn't supported by Unity's WebGL. In an attempt 
 to fix it we moved to recording the flood in Unity and playing the video during run time, Unity WebGL has issues with playing videos stored in the project 
 so I set up the project to stream the videos which were being stored in a public git repo. While this generally worked for playing the videos, it was 
-inconsistent and left many testers with just the UI overlaying a gray screen.<br><br>
+inconsistent and left many testers with just the UI overlaying a gray screen.</p>
+      <div class="text-center pb-3">
+        <img class="img-fluid" src="../img/deadpedalFC/deadpedal_fc_logo.png" width="700px">
+      </div>
+      <p class="text-left pb-1 fs-5">
 						  Our current and final solution to this problem came from realizing that we could export each individual frame of the fluid simulation as fbx files and build a class to "play" the animation by changing which objects were visible in the scene. To cut build size, I lowered the quality of the frames in blender and started cutting out every other frame and moved to cutting out 2/3 of the frames. The removal of frames made the animation look a little choppy in some areas but it allowed for an overall better product. Other visual effects in the scene helped to mask these imperfections present.<br><br>
 							  Performance issues are not just a fluid simulation issue, and while most of the serious games I work on don't need major optimization to run effectively, the flood game has continued to need optimization efforts as we expand it's features to include an active intersection and a social media feed. I work with 
 Unity's profiler and researched various techniques to reduce memory and cpu load, with many being as simple as removing print to console lines left over from 
