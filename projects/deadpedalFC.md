@@ -13,7 +13,7 @@ labels:
   - C++
   - Blueprints
   - Git
-  - itch.io
+  - Trello
 summary: "Deadpedal is a fast pace 3D arcade-style combat racing game currently in development, where twelve racers from around the world are invited to compete in an underground race with one goal in mind, to win."
 ---
 
