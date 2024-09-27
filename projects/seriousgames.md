@@ -59,14 +59,14 @@ replace text with a clear and effective visual element, I do.
       <p class="text-left pb-1 fs-5">
 						  One of the big challenges with developing these games comes from the limitation inherent to Unity's WebGL capabilities and the server's that are used 
 to host the game when it's up for people to play. During the ongoing development of a game about a town flooding, the team wanted realistic looking 3D 
-water going across terrain based on a Vermont town. After a lot of research and prototyping, I determined the best solution would be to create a fluid 
+water going across terrain based on a Vermont town.<br><br>
+						  After a lot of research and prototyping, I determined the best solution would be to create a fluid 
 simulation in blender on a replica of the Vermont-inspired town being built in Unity and play it in engine. The fluid simulation would be played as an 
 Alembic Animation, we ran into some problems with this, the first one being that the alembic file type isn't supported by Unity's WebGL. In an attempt 
 to fix it we moved to recording the flood in Unity and playing the video during run time, Unity WebGL has issues with playing videos stored in the project 
 so I set up the project to stream the videos which were being stored in a public git repo. While this generally worked for playing the videos, it was 
-inconsistent and left many testers with just the UI overlaying a gray screen. Our current and final solution to this problem came from realizing that we 
-could export each individual frame of the fluid simulation as fbx files and build a class to "play" the animation by changing which objects were visible 
-in the scene. To cut build size, I lowered the quality of the frames in blender and cut out every other to cutting out 2/3 frames, while this made the 
+inconsistent and left many testers with just the UI overlaying a gray screen.<br><br>
+						  Our current and final solution to this problem came from realizing that we could export each individual frame of the fluid simulation as fbx files and build a class to "play" the animation by changing which objects were visible in the scene. To cut build size, I lowered the quality of the frames in blender and cut out every other to cutting out 2/3 frames, while this made the 
 animation look a little choppy in some area it allowed for an overall better product and with other visual effects in the scene helped to mask these 
 imperfections.<br><br>
 							  Performance issues are not just a fluid simulation issue, and while most of the serious games I work on don't need major optimization to run effectively, the flood game has continued to need optimization efforts as we expand it's features to include an active intersection and a social media feed. I work with 
