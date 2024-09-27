@@ -147,5 +147,6 @@ animation tree:
 </main>
 
 <hr class="my-4">
-
+<p style="margin-bottom: 0;">
 itch.io Page: <a href="https://home-fries-and-associates.itch.io/mini-infinity" target="_blank">Click Here</a>
+</p>
