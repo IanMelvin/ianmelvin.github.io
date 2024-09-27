@@ -42,7 +42,7 @@ summary: "Deadpedal is a fast pace 3D arcade-style combat racing game currently 
       <iframe src="https://www.youtube.com/embed/f6xTHd7CBD0?si=ooNljA1lKjgeIscB" title="Deadpedal Progress" allowfullscreen width="800px"></iframe>
     </div>
 
-    <h2>Cars</h2>
+    <h2 class="text-center">Cars</h2>
     <hr class="my-4 mx-auto" style"width: 200px;">
     <div>
       <p>
@@ -70,8 +70,8 @@ acceleration, this being seem primarily with the Speed Boost powerup and Boost P
       </p>
     </div>
     
-    <h2>Powerups & Environmental Hazards</h2>
-    <hr class="my-4 mx-auto" style"width: 200px;">
+    <h2 class="text-center">Powerups & Environmental Hazards</h2>
+    <hr class="my-4 mx-auto">
     <div>
       <p>
 After the departure of a fellow programmer from the team, I inhertied responsibility for
@@ -105,7 +105,7 @@ function.
       <img class="img-fluid" src="../img/deadpedalFC/deadpedal_fc_logo.png" width="800px">
     </div>
 
-    <h2>UI</h2>
+    <h2 class="text-center">UI</h2>
     <hr class="my-4 mx-auto" style"width: 200px;">
     <div>
       <p>
@@ -119,7 +119,7 @@ to change what information to display.
       </p>
     </div>
 
-    <h2>Tools & Technical Information</h2> 
+    <h2 class="text-center">Tools & Technical Information</h2> 
     <hr class="my-4">
     <div>
       <p>
