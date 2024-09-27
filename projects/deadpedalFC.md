@@ -33,7 +33,7 @@ summary: "Deadpedal is a fast pace 3D arcade-style combat racing game currently 
     </div>
     
     <div>
-      <p class="text-left pb-1 fs-5">
+      <p class="text-left pt-3 pb-1 fs-5">
 						  Deadpedal is a fast pace 3D arcade-style combat racing game. You race against AI in single player or against your friends and strangers in online multiplayer. Pickup powerups and sabotage your opponents, while you race on various tracks. Players can choose between twelve racers, hailing from around the world, who are invited to compete in an underground racing series with one goal in mind, to win.<br><br>
 						  While Deadpedal has been in development for many years, my tenure on the game started in September of 2023 and has continued to present day. We are currently a team of 15 developers and have varied in size over the time of the game's development. We plan to release on steam in late 2025</p>
     </div>
@@ -45,7 +45,7 @@ summary: "Deadpedal is a fast pace 3D arcade-style combat racing game currently 
     <h2 class="text-center my-4 fs-1">Cars</h2>
     <hr class="my-4">
     <div>
-      <<p class="text-left pb-1 fs-5">
+      <p class="text-left pb-1 fs-5">
 						  For my programming test when I was first recruited to the studio, I was handed a vehicle system and an AI system and told to make them function together. Since then, everything the team and I have done with the cars has been build around the marriage of the two systems. I have worked on adding support for the various powerups, overhauling the camera, adjusting the car's gravity, max speed, accerlation, suspension, and more. 
       </p>
     </div>
@@ -78,7 +78,7 @@ summary: "Deadpedal is a fast pace 3D arcade-style combat racing game currently 
       </p>
     </div>
     
-    <div class="text-center pb-3">
+    <div class="text-center">
       <img class="img-fluid" src="../img/deadpedalFC/deadpedal_fc_logo.png" width="800px">
     </div>
 
@@ -95,13 +95,9 @@ summary: "Deadpedal is a fast pace 3D arcade-style combat racing game currently 
     <div class="text-center">
       <p>
         {% for label in page.labels %}
-        <span style="background-color: var(--tf-pill-bg)" class="badge rounded-pill">{{ label }}</span>
+        <span style="background-color: var(--tf-pill-bg)" class="badge rounded-pill fs-5">{{ label }}</span>
         {% endfor %}
       </p>
     </div>
  </div>
 </main>
-
-<hr class="my-4">
-
-itch.io Page: <a href="https://faycrest.itch.io/deadpedal" target="_blank">Click Here</a>
