@@ -86,5 +86,5 @@ summary: "Dead Pedal is a 3rd person, action, open world driving game set in a f
  </div>
 </main>
 <hr class="my-4">
-Steam Page: <a href="https://store.steampowered.com/app/2250160/Dead_Pedal/" target="_blank">Click Here</a>
+Steam Page: <a href="https://store.steampowered.com/app/2250160/Dead_Pedal/" target="_blank">Click Here</a><br>
 itch.io Page: <a href="https://larnio.itch.io/dead-pedal" target="_blank">Click Here</a>
