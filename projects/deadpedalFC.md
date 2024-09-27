@@ -42,7 +42,7 @@ summary: "Deadpedal is a fast pace 3D arcade-style combat racing game currently 
     <h2 class="text-center my-4 fs-1">Cars</h2>
     <hr class="my-4">
     <div class="text-center pb-3">
-      <img class="img-fluid" src="../img/deadpedalFC/deadpedal_fc_logo.png" width="500px">
+      <img class="img-fluid" src="../img/deadpedalFC/deadpedal_fc_logo.png" width="700px">
     </div>
     <div>
       <p class="text-left pb-1 fs-5">
@@ -53,7 +53,7 @@ summary: "Deadpedal is a fast pace 3D arcade-style combat racing game currently 
     <h2 class="text-center my-4 fs-1">Powerups & Environmental Hazards</h2>
     <hr class="my-4">
     <div class="text-center pb-3">
-      <img class="img-fluid" src="../img/deadpedalFC/deadpedal_fc_logo.png" width="500px">
+      <img class="img-fluid" src="../img/deadpedalFC/deadpedal_fc_logo.png" width="700px">
     </div>
     <div>
       <p class="text-left pb-1 fs-5">
@@ -64,7 +64,7 @@ summary: "Deadpedal is a fast pace 3D arcade-style combat racing game currently 
     <h2 class="text-center my-4 fs-1">UI</h2>
     <hr class="my-4">
     <div class="text-center">
-      <img class="img-fluid" src="../img/deadpedalFC/deadpedal_fc_logo.png" width="500px">
+      <img class="img-fluid" src="../img/deadpedalFC/deadpedal_fc_logo.png" width="700px">
     </div>
     <div>
       <p class="text-left pb-1 fs-5">
