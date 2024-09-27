@@ -43,7 +43,7 @@ summary: "Deadpedal is a fast pace 3D arcade-style combat racing game currently 
     </div>
 
     <h2 class="text-center my-4">Cars</h2>
-    <hr class="my-4 mx-auto" style="width: 200px;">
+    <hr class="my-4">
     <div>
       <p class="text-left pt-3 pb-1">
 						  For my programming test when I was first recruited to the studio, I was handed a vehicle system and an AI system and told to make them function together. Since then, everything the team and I have done with the cars has been build around the marriage of the two systems. I have worked on adding support for the various powerups, overhauling the camera, adjusting the car's gravity, max speed, accerlation, suspension, and more. 
@@ -61,7 +61,7 @@ summary: "Deadpedal is a fast pace 3D arcade-style combat racing game currently 
     </div>
     
     <h2 class="text-center my-4">Powerups & Environmental Hazards</h2>
-    <hr class="my-4 mx-auto" style="width: 200px;">
+    <hr class="my-4">
     <div>
       <p class="text-left pt-3 pb-1">
 						  After the departure of a fellow programmer from the team, I inhertied responsibility forthe powerups. At the time there was only a template, a manager component for the player, two powerups in a prototyped state. Since I took over, I expanded the total to 7 powerups and have continued to update the manager to expand it's ability to interact with other system such as the HUD and the player camera, for when the player uses a Speed Boost to increase their acceleration to effect camera drag. The current powerups include: Speed Boost, Homing Missile, Shockwave, Shield, Smokescreen, and more.
@@ -83,7 +83,7 @@ summary: "Deadpedal is a fast pace 3D arcade-style combat racing game currently 
     </div>
 
     <h2 class="text-center my-4">UI</h2>
-    <hr class="title-underline text-center my-4">
+    <hr class="my-4">
     <div>
       <p class="text-left pt-3 pb-1">
 						  One of my reocurring roles has been working with UI team to add / iterate on the functionality for the UI as well as to help plan potential systems to support the UI, such as how to distinquish between input from Playstation and Xbox controllers. We ended up putting this on hold in favor of a general check for Mouse and Keyboard vs Gamepad, having the option toggle controller specific UI being in the settings. While working on the UI, I've developed data structures to help manage the data being passed to the UI with the first one being for the leaderboard. The leaderboard structure has allowed me to focus what data is past over to the UI code while being easily expandible whenever the team deicides to change what information to display.
