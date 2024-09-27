@@ -106,7 +106,7 @@ function.
     </div>
 
     <h2 class="text-center">UI</h2>
-    <hr class="my-4 mx-auto" style="width: 200px;">
+    <hr class="title-underline text-center my-4">
     <div>
       <p>
 One of my reocurring roles has been working with UI team to add / iterate on the functionality for the UI as 
