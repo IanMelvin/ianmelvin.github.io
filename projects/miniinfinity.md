@@ -36,7 +36,7 @@ summary: "Mini Infinity is a 3rd person wave based shooter about a star-mage in 
     </p>
   </div>
 
-  <h2 class="text-center my-4 fs-1">Character</h2>
+  <h2 class="text-center my-4 fs-1">Player & Enemies</h2>
   <hr class="my-4">
   <div class="text-center pb-3">
     <img class="img-fluid" src="../img/miniinfinity/miCharacer_Enemy.png" width="700px">
@@ -53,23 +53,23 @@ two groups.
 
   <div>
     <p class="text-left pt-3 pb-1 fs-5">
-						  For the enemy AI I utilized Unity's Nav Mesh to determine the moveable terrain.
+						  For the enemy AI I utilized Unity's NavMesh to determine the moveable terrain.
 And each enemy type had its own behavior system which helped to determine how
 it should act depending on what is happening in the world around it.
     </p> 
   </div>
     
-  <h2 class="text-center my-4 fs-1">Item</h2>
+  <h2 class="text-center my-4 fs-1">Relic</h2>
   <hr class="my-4">
   <div class="text-center pb-3">
     <img class="img-fluid" src="../img/miniinfinity/miRelic.png" width="700px">
   </div>
   <div>
     <p class="text-left pt-3 pb-1 fs-5">
-						  One of the system we included in our game was referred to as the Relic system. 
+						  One of the systems we included in our game was referred to as the Relic system. 
 Relics are items that can spawn throughout the game and help the player if they 
 are being overwhelmed by the number of enemies around them. In the game we only 
-have one type of Relic, the Leo or Fire Relic (Pictured bellow). The Leo Relic 
+have one type of Relic, the Leo or Fire Relic. The Leo Relic 
 when put on the ground would blast out a cone of fire destroying any enemies 
 which came in its path.
     </p> 
@@ -81,11 +81,11 @@ which came in its path.
 for the Relic to have 2 different materials (depending on if it's active or not),
 the flame VFX and the behind the scenes code that made it all come together and 
 work seamlessly. This was handled in a way which allowed for an easy conversion
-to an item base class if we able to add more Relics. Pictured bellow is the Relic:
+to an item base class if we were able to add more Relics. Pictured above is the Leo Relic:
     </p> 
   </div>
   
-  <h2 class="text-center my-4 fs-1">UI</h2>
+  <h2 class="text-center my-4 fs-1">User Interface</h2>
   <hr class="my-4">
     <div class="text-center pb-3">
     <img class="img-fluid" src="../img/miniinfinity/miSettings_menu.png" width="700px">
@@ -103,7 +103,7 @@ score, wave number and number of active enemies.
   <div>
     <p class="text-left pt-3 pb-1 fs-5">
 						  For the control binding, I decided to create my own system to manage and store
-the player preferences and update any scripts which rely on player input. Like
+the player preferences and updates any scripts which rely on player input. Like
 with the rest of the settings menu values, when the game is closed the player
 settings are saved and reloaded when the player next interacts with the settings 
 menu.
@@ -129,7 +129,7 @@ provide accurate visual feedback
 						  Both the player and enemies had animation controllers, each controller established
 how the animations could and would transition between each other. In different movement
 and attack script for the characters, variables were set which changed what animations
-were active depending on what the player was doing. Pictured bellow is the player 
+were active depending on what the player was doing. Pictured above is the player 
 animation tree:
     </p> 
   </div>
