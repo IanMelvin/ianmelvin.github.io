@@ -65,7 +65,7 @@ summary: "Deadpedal is a fast-paced 3D arcade-style combat racing game currently
     </div>
     <h2 class="text-center my-4 fs-1">User Interface</h2>
     <hr class="my-4">
-    <div class="text-center">
+    <div class="text-center pb-3">
       <img class="img-fluid" src="../img/deadpedalFC/dpfc_cs.png" width="700px">
     </div>
     <div>
