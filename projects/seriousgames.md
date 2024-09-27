@@ -4,7 +4,7 @@ type: project
 image: img/seriousgames/segslogo.png
 title: "Serious Games (@ UVM)"
 date: January 2023 - Present
-year: 2023 - 2024
+year: 2023.1 - 2024
 published: true
 teamSize: 5 - 7
 labels:
