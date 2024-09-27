@@ -1,21 +1,18 @@
 ---
 layout: project
 type: project
-image: img/deadpedalFC/dpfclogo.png
-title: "Deadpedal (Faycrest Studios)"
-date: September 2023 - Present
+image: img/seriousgames/segslogo.png
+title: "Serious Games (@ UVM)"
+date: January 2023 - Present
 year: 2023 - 2024
 published: true
-teamSize: 15
+teamSize: 5 - 7
 labels:
-  - Unreal 5
-  - UMG UI
-  - C++
-  - Blueprints
+  - Unity
+  - C#
   - Visual Studios
   - Git
-  - Trello
-summary: "Deadpedal is a fast-paced 3D arcade-style combat racing game currently in development, where twelve racers from around the world are invited to compete in an underground race with one goal in mind, to win."
+summary: "Develop WebGL games that are used to gather data on how people respond to various situations, like flooding and farm management."
 ---
 
 <script type='text/javascript'>
@@ -36,10 +33,9 @@ summary: "Deadpedal is a fast-paced 3D arcade-style combat racing game currently
     </div>	    
     <div>
       <p class="text-left pt-3 pb-1 fs-5">
-						  Deadpedal is a fast-paced 3D arcade-style combat racing game. You race against AI in single player or against your friends and strangers in online multiplayer. Pickup powerups and sabotage your opponents, while you race on various tracks. Players can choose between twelve racers, hailing from around the world, who are invited to compete in an underground racing series with one goal in mind, to win.<br><br>
-						  While Deadpedal has been in development for many years, my tenure on the game started in September of 2023 and has continued to the present day. We are currently a team of 15 developers and have varied in size over the time of the game's development. We plan to release on steam in late 2025.</p>
+						  At UVM, serious games are short, browser based games that are designed to place the user in various situations reflecting the real world. These situations include, a town potentially about to undergo a severe flood, a network of farms exposed to swine flu, and managing a farm. Each of these games produce data based on how the user interacts with the game and adapts to the situations put in front of them. The data produced is handed over to the team researchers who turn the data into a paper based on the intended purpose of the game. The games are developed in a collaborative environment between developers and researchers.</p>
     </div>
-    <h2 class="text-center my-4 fs-1">Cars</h2>
+    <h2 class="text-center my-4 fs-1">User Interface</h2>
     <hr class="my-4">
     <div class="text-center pb-3">
       <img class="img-fluid" src="../img/deadpedalFC/deadpedal_fc_logo.png" width="700px">
@@ -50,7 +46,7 @@ summary: "Deadpedal is a fast-paced 3D arcade-style combat racing game currently
 							  Deadpedal is a complicated game and continues to go through various iterations on how we want it to feel when the players are racing around the various tracks. After a demo build went out internally, I was tasked with overhauling the existing player camera setup to better convey speed and to implement camera drag based on the strength of the car's acceleration, this being seen primarily with the Speed Boost powerup and Boost Pads.
       </p>
     </div>
-    <h2 class="text-center my-4 fs-1">Power Ups & Environmental Hazards</h2>
+    <h2 class="text-center my-4 fs-1">WebGL & Performance</h2>
     <hr class="my-4">
     <div class="text-center pb-3">
       <img class="img-fluid" src="../img/deadpedalFC/deadpedal_fc_logo.png" width="700px">
@@ -58,7 +54,7 @@ summary: "Deadpedal is a fast-paced 3D arcade-style combat racing game currently
     <div>
       <p class="text-left pb-1 fs-5">
 						  After the departure of a fellow programmer from the team, I inherited responsibility for the powerups. At the time there was only a template, a manager component for the player, two power ups in a prototyped state. Since I took over, I expanded the total to 7 power ups and have continued to update the manager to expand its ability to interact with other systems such as the HUD and the player camera, for when the player uses a Speed Boost to increase their acceleration to effect camera drag. The current power ups include: Speed Boost, Homing Missile, Shockwave, Shield, Smokescreen, and more.<br><br>
-							  A unique elements of Deadpedal is that each track comes with an Environmental Hazard, such as the volcanic eruption on the tropical island track or the explosion of an old gas station on our western usa desert track. In the game, these take the form of power ups that players can pickup, unlike regular powerups they alter the track and serve as a potential hazard to every player. These have been a fun challenge as they need to work within the powerup structure but effect systems outside of the manager I've had to work closely with artists for both Powerups and Environmental Hazards, mainly the VFX team, to ensure smooth implementation of their assets and that it we have a unified vision of how these systems function.
+							  One of the unique elements of Deadpedal is that each track comes with an Environmental Hazard, such as the volcanic eruption on the tropical island track or the explosion of an old gas station on our western usa desert track. In the game, these take the form of power ups that players can pickup, unlike regular powerups they alter the track and serve as a potential hazard to every player. These have been a fun challenge as they need to work within the powerup structure but effect systems outside of the manager I've had to work closely with artists for both Powerups and Environmental Hazards, mainly the VFX team, to ensure smooth implementation of their assets and that it we have a unified vision of how these systems function.
       </p>
     </div>
     <h2 class="text-center my-4 fs-1">User Interface</h2>
