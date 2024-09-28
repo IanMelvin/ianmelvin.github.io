@@ -35,7 +35,7 @@ summary: "Deadpedal is a fast-paced 3D arcade-style combat racing game currently
       </div>
     </div>	    
     <div>
-      <p class="text-left pt-3 pb-1 fs-5">
+      <p class="text-left pb-1 fs-5">
 						  Deadpedal is a fast-paced 3D arcade-style combat racing game. You race against AI in single player or against your friends and strangers in online multiplayer. Pickup powerups and sabotage your opponents, while you race on various tracks. Players can choose between twelve racers, hailing from around the world, who are invited to compete in an underground racing series with one goal in mind, to win.<br><br>
 						  While Deadpedal has been in development for many years, my tenure on the game started in September of 2023 and has continued to the present day. We are currently a team of 15 developers and have varied in size over the time of the game's development. We plan to release on steam in late 2025.</p>
     </div>
