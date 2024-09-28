@@ -2,7 +2,7 @@
 layout: project
 type: project
 image: img/seriousgames/segslogo.png
-title: "Serious Games (@ UVM)"
+title: "Serious Games (SEGS @UVM)"
 date: January 2023 - Present
 year: 2023.1 - 2024
 published: true
@@ -28,31 +28,30 @@ summary: "Develop WebGL games that are used to gather data on how people respond
   <div>
     <div style="max-width: 700px; margin: 1vw auto;">	  
       <div class="text-center" style="position: relative; padding-bottom: 57%; height: 0px;">
-        <iframe src="https://www.youtube.com/embed/f6xTHd7CBD0?si=ooNljA1lKjgeIscB" title="Deadpedal Demo" allowfullscreen style="position: absolute; top: 0px; left: 0px; width: 100%; height: 99%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        <iframe src="https://www.youtube.com/embed/AgUin5BcMDc?si=c9dELcRqgB2r4inh" title="Serious Games Compilation" allowfullscreen style="position: absolute; top: 0px; left: 0px; width: 100%; height: 99%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
       </div>
     </div>	    
     <div>
       <p class="text-left pt-3 pb-1 fs-5">
-						  For what I do at UVM, serious games are short, browser based games that are designed to place the user in various situations reflecting the real world. These situations include, a town potentially about to undergo a severe flood, a network of farms exposed to swine flu, and managing a farm. Each of these games produce data based on how the user interacts with and adapts to the situations put in front of them. The data produced is handed over to the team researchers who turn the data into a paper, based on the intended purpose of the game. The games are developed in a collaborative environment between developers and researchers.</p>
+						  For what I do at the Social Ecological Gaming and Simulation (SEGS) Lab at UVM, serious games are short, browser based games that are designed to place the user in various situations reflecting the real world. These situations include, a town potentially about to undergo a severe flood, a network of farms exposed to swine flu, and striking a balance between personal autonomy and market power for a farm. Each of these games produce data based on how the user interacts with and adapts to the situations put in front of them. The data produced is handed over to the team researchers who turn the data into a paper based on the intended purpose of the game. The games are developed in a collaborative environment between developers and researchers.</p>
     </div>
     <h2 class="text-center my-4 fs-1">User Interface</h2>
     <hr class="my-4">
     <div class="text-center pb-3">
-      <img class="img-fluid" src="../img/deadpedalFC/deadpedal_fc_logo.png" width="700px">
+      <img class="img-fluid" src="../img/seriousgames/sg_prui.png" width="700px">
     </div>
     <div>
       <p class="text-left pb-1 fs-5">
 						  No matter what type of serious game I'm developing, the UI is always the most important part of the game. The UI is what conveys the scenario and the rules to the player, it's how the player makes their choices and it's what gives the player an idea of how well they're doing. Due to the size 
 of the teams for these project being very small, I take on the role of both UI Programmer and UI Designer, in uncommon cases I serve as the UI 
 Artist as well. At its core, I try to keep the UI simple and reduce distractions while working with the researchers on the team to make sure what 
-is presented is clear, concise, and aligns with the information we are trying to gather with the game. One of the main ways to simplify the information is by breaking down blocks of text into images with brief summaries. If I can 
-replace text with a clear and effective visual element, I do. The systems behind the UI are kept light weight and separate from the main systems in the games with designated channels of communication to update the displayed data and gather any user input. This structure makes it so any oddities that appear during testing are easy to track down
+is presented is clear, concise, and aligns with the information we are trying to gather with the game. One of the main ways to simplify the information is by breaking down blocks of text into images with brief summaries. The systems behind the UI are kept light weight and separate from the main systems in the games with designated channels of communication to update the displayed data and gather any user input. This structure makes it so any oddities that appear during testing are easy to track down
       </p>
     </div>
     <h2 class="text-center my-4 fs-1">WebGL & Game Performance</h2>
     <hr class="my-4">
     <div class="text-center pb-3">
-      <img class="img-fluid" src="../img/deadpedalFC/deadpedal_fc_logo.png" width="700px">
+      <img class="img-fluid" src="../img/seriousgames/sg_flood.png" width="700px">
     </div>
     <div>
       <p class="text-left pb-1 fs-5">
@@ -66,7 +65,7 @@ to fix it we moved to recording the flood in Unity and playing the video during 
 so I set up the project to stream the videos which were being stored in a public git repo. While this generally worked for playing the videos, it was 
 inconsistent and left many testers with just the UI overlaying a gray screen.</p>
       <div class="text-center pb-3">
-        <img class="img-fluid" src="../img/deadpedalFC/deadpedal_fc_logo.png" width="700px">
+        <img class="img-fluid" src="../img/seriousgames/sg_eeid.png" width="700px">
       </div>
       <p class="text-left pb-1 fs-5">
 						  Our current and final solution to this problem came from realizing that we could export each individual frame of the fluid simulation as fbx files and build a class to "play" the animation by changing which objects were visible in the scene. To cut build size, I lowered the quality of the frames in blender and started cutting out every other frame and moved to cutting out 2/3 of the frames. The removal of frames made the animation look a little choppy in some areas but it allowed for an overall better product. Other visual effects in the scene helped to mask these imperfections present.<br><br>
