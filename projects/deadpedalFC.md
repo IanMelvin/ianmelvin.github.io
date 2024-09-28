@@ -74,7 +74,7 @@ summary: "Deadpedal is a fast-paced 3D arcade-style combat racing game currently
     </div>
     <div>
       <p class="text-left pb-1 fs-5">
-						  One of my recurring roles has been working with the UI team to add / iterate on the functionality for the UI as well as to help plan potential systems to support the UI, such as how to distinguish between input from Playstation and Xbox controllers. We ended up putting this on hold in favor of a general check for Mouse and Keyboard vs Gamepad, having the option toggle controller specific UI being in the settings. While working on the UI, I've developed data structures to help manage the data being passed to the UI with the first one being for the leaderboard. The leaderboard structure has allowed me to focus what data is passed over to the UI code while being easily expandable whenever the team decides to change what information to display.
+						  One of my recurring roles has been working with the UI team to add / iterate on the functionality for the UI as well as to help plan potential systems to support the UI, such as how to distinguish between input from Playstation and Xbox controllers. We ended up putting this on hold in favor of a general check for Mouse and Keyboard vs Gamepad, and having the option to toggle Xbox or Playstation specific UI in the settings menu. While working on the UI, I've developed data structures to help manage the data being passed to the UI with the first one being for the leaderboard. The leaderboard structure has allowed me to focus what data is passed over to the UI code while being easily expandable whenever the team decides to change what information to display.
       </p>
     </div>
     <h2 class="text-center my-4 fs-1">Tools</h2> 
