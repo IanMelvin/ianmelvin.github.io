@@ -54,8 +54,10 @@ summary: "Deadpedal is a fast-paced 3D arcade-style combat racing game currently
     </div>
     <h2 class="text-center my-4 fs-1">Power Ups & Environmental Hazards</h2>
     <hr class="my-4">
-    <div class="text-center pb-3">
-      <img class="img-fluid" src="../img/deadpedalFC/deadpedal_fc_logo.png" width="700px">
+    <div style="max-width: 700px; margin: 1vw auto;">	  
+      <div class="text-center" style="position: relative; padding-bottom: 57%; height: 0px;">
+        <iframe src="https://www.youtube.com/embed/lB9cknU4G1I?si=IcPY_U2HHw2EBkRX" title="Shockwave and Shield Powerups Demo" allowfullscreen style="position: absolute; top: 0px; left: 0px; width: 100%; height: 99%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+      </div>
     </div>
     <div>
       <p class="text-left pb-1 fs-5">
@@ -65,8 +67,10 @@ summary: "Deadpedal is a fast-paced 3D arcade-style combat racing game currently
     </div>
     <h2 class="text-center my-4 fs-1">User Interface</h2>
     <hr class="my-4">
-    <div class="text-center pb-3">
-      <img class="img-fluid" src="../img/deadpedalFC/dpfc_cs.png" width="700px">
+    <div style="max-width: 700px; margin: 1vw auto;">	  
+      <div class="text-center" style="position: relative; padding-bottom: 57%; height: 0px;">
+        <iframe src="https://www.youtube.com/embed/fdolgSHiiyo?si=3g9bwdDqWkJF8jo8" title="Main Menu Showcase" allowfullscreen style="position: absolute; top: 0px; left: 0px; width: 100%; height: 99%;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+      </div>
     </div>
     <div>
       <p class="text-left pb-1 fs-5">
